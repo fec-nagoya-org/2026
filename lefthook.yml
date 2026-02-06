@@ -1,0 +1,12 @@
+pre-commit:
+  jobs:
+    - name: biome check
+      run: bunx --bun biome check --fix {staged_files}
+      stage_fixed: true
+
+post-merge:
+  files: git diff-tree -r --name-only --no-commit-id ORIG_HEAD HEAD
+  jobs:
+    - name: bun install
+      glob: "bun.lock"
+      run: bun install

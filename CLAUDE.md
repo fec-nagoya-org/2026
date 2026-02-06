@@ -6,6 +6,7 @@
 
 - HTML
 - Tailwind CSS v4 (CLI)
+- Biome (Linter / Formatter)
 - GitHub Pages
 
 ## Development
@@ -19,6 +20,9 @@ bun dev
 
 # CSSビルド
 bun run build
+
+# Lint / Format（自動修正）
+bun run check
 ```
 
 ## Project Structure
