@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+	--color-accent: #ff6b00;
+	--color-accent-dark: #e55a00;
+
+	--font-display: "Modak", cursive;
+	--font-sans: "Noto Sans JP", sans-serif;
+}
