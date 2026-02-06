@@ -1,37 +1,38 @@
-# Frontend Conference Nagoya 2026
+# CLAUDE.md
 
-フロントエンドカンファレンス名古屋 2026 の公式Webサイト（LP1枚構成）
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Overview
+
+フロントエンドカンファレンス名古屋 2026 の公式Webサイト。LP1枚構成の静的サイトで、GitHub Pagesでホスティング。
 
 ## Tech Stack
 
-- HTML
-- Tailwind CSS v4 (CLI)
+- HTML + Tailwind CSS v4 (CLI)
 - Biome (Linter / Formatter)
-- GitHub Pages
+- Bun (パッケージマネージャー / ランタイム)
+- Lefthook (Git hooks)
 
-## Development
+## Commands
 
 ```bash
-# 依存関係のインストール
-bun i
-
-# 開発（ウォッチモード）
-bun dev
-
-# CSSビルド
-bun run build
-
-# Lint / Format（自動修正）
-bun run check
+bun i                # 依存関係のインストール
+bun dev              # 開発サーバー起動 + Tailwind CSSウォッチモード (port 3000)
+bun run build        # Tailwind CSS本番ビルド（minify）
+bun run check        # Biome lint / format（自動修正）
 ```
 
-## Project Structure
+## Architecture
 
-```
-├── src/
-│   └── input.css       # Tailwind CSS 入力ファイル
-├── index.html          # メインページ
-├── style.css           # ビルド出力（自動生成）
-├── package.json
-└── CLAUDE.md
-```
+- `index.html` - サイト本体（LP1枚構成）
+- `src/input.css` - Tailwind CSS入力ファイル（`@import "tailwindcss"` のみ）
+- `style.css` - Tailwind CLIが生成する出力CSS（gitignore対象、直接編集不可）
+- `server.js` - Bun製の開発用静的ファイルサーバー（port 3000、起動時にブラウザを自動オープン）
+- `biome.json` - Biome設定（インデント: タブ、クォート: ダブル、recommended rules）
+- `lefthook.yml` - pre-commit: Biome check、post-merge: bun.lock変更時に自動 `bun install`
+
+## Coding Conventions
+
+- インデントはタブ
+- JavaScript文字列はダブルクォート
+- Biomeのrecommended rulesに準拠
