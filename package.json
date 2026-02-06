@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./style.css --watch",
-    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./style.css --minify"
+    "dev": "tailwindcss -i ./src/input.css -o ./style.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./style.css --minify"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.18",

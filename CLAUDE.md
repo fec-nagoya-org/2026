@@ -12,13 +12,13 @@
 
 ```bash
 # 依存関係のインストール
-npm install
+bun i
 
 # 開発（ウォッチモード）
-npm run dev
+bun dev
 
 # CSSビルド
-npm run build
+bun run build
 ```
 
 ## Project Structure
