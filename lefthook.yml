@@ -6,6 +6,7 @@ pre-commit:
       glob: "*.{html,css}"
     - name: biome check
       run: bunx --bun biome check --fix {staged_files}
+      glob: "*.{js,ts,jsx,tsx,json,jsonc,css,html}"
       stage_fixed: true
 
 post-merge:
