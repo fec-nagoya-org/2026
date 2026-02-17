@@ -1,9 +1,35 @@
 @import "tailwindcss";
 
+body {
+	max-width: 402px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 @theme {
 	--color-accent: #ff6b00;
 	--color-accent-dark: #e55a00;
 
 	--font-display: "Modak", cursive;
 	--font-sans: "Noto Sans JP", sans-serif;
+}
+
+/* Marquee animation for scrolling text bands */
+@keyframes marquee {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+@utility animate-marquee {
+	animation: marquee 30s linear infinite;
+}
+
+/* Trim font metric whitespace (cap to baseline) */
+@utility text-trim {
+	text-box-trim: trim-both;
+	text-box-edge: cap alphabetic;
 }
