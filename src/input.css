@@ -4,6 +4,20 @@ body {
 	max-width: 402px;
 	margin-left: auto;
 	margin-right: auto;
+	background-image:
+		url("../assets/bg-text-pattern.svg"), url("../assets/bg-mascot.svg");
+	background-repeat: repeat;
+	background-size:
+		965px 446px,
+		9px 19px;
+	background-position: left top;
+	background-attachment: fixed;
+}
+
+header {
+	background-image: url("../assets/bg-mascot-light.svg");
+	background-repeat: repeat;
+	background-size: 9px 19px;
 }
 
 @theme {
