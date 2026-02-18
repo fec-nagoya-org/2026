@@ -33,118 +33,195 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Modak&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Modak&family=Noto+Sans+JP:wght@400;500;700;900&family=Roboto+Condensed:ital,wght@1,900&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./style.css" />
 	</head>
-	<body class="font-sans text-black bg-white">
-		<!-- Hero Section -->
-		<header
-			class="relative min-h-screen bg-black flex flex-col items-center justify-center text-center text-white overflow-hidden"
+	<body class="font-sans text-black bg-[#fafafa]">
+		<div
+			class="relative mx-auto max-w-[410px] border-x-4 border-t-4 border-[#0a0a0a] bg-white"
 		>
-			<!-- Top marquee band -->
-			<div class="relative z-10 bg-black py-1 overflow-hidden border-gray-800">
-				<div class="inline-flex w-max whitespace-nowrap animate-marquee">
-					<div class="flex items-center gap-2 shrink-0 pr-2">
-						<span class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim">FRONTEND CONFERENCE NAGOYA 2026</span>
-						<img src="./assets/eye.svg" alt="" class="w-7.75 h-8 shrink-0" aria-hidden="true" />
-						<span class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim">FRONTEND CONFERENCE NAGOYA 2026</span>
-						<img src="./assets/eye.svg" alt="" class="w-7.75 h-8 shrink-0" aria-hidden="true" />
-					</div>
-					<div class="flex items-center gap-2 shrink-0 pr-2">
-						<span class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim">FRONTEND CONFERENCE NAGOYA 2026</span>
-						<img src="./assets/eye.svg" alt="" class="w-7.75 h-8 shrink-0" aria-hidden="true" />
-						<span class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim">FRONTEND CONFERENCE NAGOYA 2026</span>
-						<img src="./assets/eye.svg" alt="" class="w-7.75 h-8 shrink-0" aria-hidden="true" />
+			<!-- Hero Section -->
+			<header class="relative bg-black text-white overflow-hidden h-[874px]">
+				<!-- Background dot pattern -->
+				<div
+					class="absolute inset-0 pointer-events-none"
+					aria-hidden="true"
+				></div>
+
+				<!-- Top marquee band -->
+				<div
+					class="relative z-20 bg-[#0a0a0a] py-1 overflow-hidden border-gray-800"
+				>
+					<div class="inline-flex w-max whitespace-nowrap animate-marquee">
+						<div class="flex items-center gap-2 shrink-0 pr-2">
+							<span
+								class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+								>FRONTEND CONFERENCE NAGOYA 2026</span
+							>
+							<img
+								src="./assets/eye.svg"
+								alt=""
+								class="w-7.75 h-8 shrink-0"
+								aria-hidden="true"
+							/>
+							<span
+								class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+								>FRONTEND CONFERENCE NAGOYA 2026</span
+							>
+							<img
+								src="./assets/eye.svg"
+								alt=""
+								class="w-7.75 h-8 shrink-0"
+								aria-hidden="true"
+							/>
+						</div>
+						<div class="flex items-center gap-2 shrink-0 pr-2">
+							<span
+								class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+								>FRONTEND CONFERENCE NAGOYA 2026</span
+							>
+							<img
+								src="./assets/eye.svg"
+								alt=""
+								class="w-7.75 h-8 shrink-0"
+								aria-hidden="true"
+							/>
+							<span
+								class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+								>FRONTEND CONFERENCE NAGOYA 2026</span
+							>
+							<img
+								src="./assets/eye.svg"
+								alt=""
+								class="w-7.75 h-8 shrink-0"
+								aria-hidden="true"
+							/>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div
-				class="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-3"
-				aria-hidden="true"
-			>
-				<span class="font-display text-[20vw] text-white whitespace-nowrap"
-					>フロカン</span
+
+				<!-- White rounded background shape with mascot pattern -->
+				<div
+					class="absolute left-0 top-[40px] w-[402px] hero-bg-shape"
+					style="height: 834px"
+					aria-hidden="true"
+				></div>
+
+				<!-- Title with black bg blocks -->
+				<h1 class="absolute z-10 left-0 top-[40px] flex flex-col items-start">
+					<span class="bg-[#0a0a0a] px-4 pt-3 pb-1 inline-flex">
+						<img
+							src="./assets/hero-title-line1.svg"
+							alt="FRONTEND"
+							class="h-9 w-auto"
+						/>
+					</span>
+					<span class="bg-[#0a0a0a] px-4 py-3 inline-flex">
+						<img
+							src="./assets/hero-title-line2.svg"
+							alt="CONFERENCE"
+							class="h-9 w-auto"
+						/>
+					</span>
+					<span class="bg-[#0a0a0a] px-4 pt-1 pb-3 inline-flex">
+						<img
+							src="./assets/hero-title-line3.svg"
+							alt="NAGOYA"
+							class="h-9 w-auto"
+						/>
+					</span>
+				</h1>
+
+				<!-- Venue / Date info -->
+				<div
+					class="absolute z-10 left-3 top-[228px] text-sm font-black text-black"
 				>
-			</div>
-			<div class="absolute top-8 right-8" aria-hidden="true">
+					<p>
+						【場所】 WINK AICHI<span class="font-normal text-xs"
+							>(ウィンク愛知)</span
+						>
+					</p>
+					<p>【日程】 2026.05.09</p>
+				</div>
+
+				<!-- Starburst decorations -->
+				<!-- Top-right small (~23px) -->
 				<img
 					src="./assets/starburst.svg"
 					alt=""
 					width="120"
 					height="120"
-					class="w-24 h-24 sm:w-30 sm:h-30"
+					class="absolute z-10 w-[23px] h-auto rotate-[-5.61deg] top-[102px] right-[15px]"
+					aria-hidden="true"
 				/>
-			</div>
-			<div class="relative z-10 px-6">
+				<!-- Top-right large (~52px) -->
 				<img
-					src="./assets/logo.svg"
-					alt="FRONTEND CONFERENCE NAGOYA"
-					class="mx-auto mb-8 w-full max-w-xs"
+					src="./assets/starburst.svg"
+					alt=""
+					width="120"
+					height="120"
+					class="absolute z-10 w-[52px] h-auto rotate-[38.5deg] top-[131px] right-[-17px]"
+					aria-hidden="true"
 				/>
-				<p class="font-display text-3xl sm:text-4xl tracking-wider mb-4">
-					2026.05.09 SAT
-				</p>
-				<p class="text-lg">ウインクあいち</p>
-			</div>
-		</header>
+				<!-- Bottom-left large (~100px) -->
+				<img
+					src="./assets/starburst.svg"
+					alt=""
+					width="120"
+					height="120"
+					class="absolute z-10 w-[100px] h-auto rotate-[13.61deg] top-[729px] left-[43px]"
+					aria-hidden="true"
+				/>
+				<!-- Bottom-left medium (~50px) -->
+				<img
+					src="./assets/starburst.svg"
+					alt=""
+					width="120"
+					height="120"
+					class="absolute z-10 w-[50px] h-auto rotate-[-27.62deg] top-[683px] left-[-6px]"
+					aria-hidden="true"
+				/>
 
-		<main>
-		<!-- HEADS UP! Section -->
-		<section class="bg-black py-16 px-6 text-center text-white overflow-hidden" aria-labelledby="heads-up-heading">
-			<div class="relative mb-12 mx-auto max-w-sm">
-				<span
-					class="block font-display text-6xl sm:text-8xl leading-none opacity-10"
+				<!-- Scroll arrow -->
+				<div
+					class="absolute z-10 left-1/2 -translate-x-1/2 top-[778px]"
 					aria-hidden="true"
-					>HEADS UP!</span
 				>
-				<span
-					class="block font-display text-6xl sm:text-8xl leading-none opacity-20 -mt-14 sm:-mt-18"
-					aria-hidden="true"
-					>HEADS UP!</span
-				>
-				<span
-					class="block font-display text-6xl sm:text-8xl leading-none opacity-40 -mt-14 sm:-mt-18"
-					aria-hidden="true"
-					>HEADS UP!</span
-				>
-				<span
-					class="block font-display text-6xl sm:text-8xl leading-none opacity-70 -mt-14 sm:-mt-18"
-					aria-hidden="true"
-					>HEADS UP!</span
-				>
-				<h2
-					id="heads-up-heading"
-					class="block font-display text-6xl sm:text-8xl leading-none -mt-14 sm:-mt-18"
-				>
-					HEADS UP!
-				</h2>
-			</div>
-			<div class="max-w-sm mx-auto space-y-6 text-base leading-relaxed">
-				<p>
-					フロントエンドカンファレンスの波が<br />ついに名古屋へ。
-				</p>
-				<p>
-					最新のフロントエンド事情と<br />全国のフロントエンドエンジニアが<br />日本の中心に集結！
-				</p>
-				<p>
-					特別な一日をお見逃しなく！<br />『名古屋でもフロカンやるぞー！』
-				</p>
-			</div>
-		</section>
+					<div
+						class="size-18 rounded-full border-4 border-[#FAFAFA] bg-[#0A0A0A] flex flex-col items-center justify-center overflow-hidden"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="23"
+							height="27"
+							viewBox="0 0 23 27"
+							fill="none"
+						>
+							<path
+								d="M12.5459 1.5C12.5459 0.671573 11.8743 0 11.0459 0C10.2175 0 9.5459 0.671573 9.5459 1.5H11.0459H12.5459ZM9.98524 26.5607C10.571 27.1464 11.5208 27.1464 12.1066 26.5607L21.6525 17.0147C22.2383 16.4289 22.2383 15.4792 21.6525 14.8934C21.0667 14.3076 20.117 14.3076 19.5312 14.8934L11.0459 23.3787L2.56062 14.8934C1.97483 14.3076 1.02508 14.3076 0.439297 14.8934C-0.14649 15.4792 -0.14649 16.4289 0.439297 17.0147L9.98524 26.5607ZM11.0459 1.5H9.5459L9.5459 25.5H11.0459H12.5459L12.5459 1.5H11.0459Z"
+								fill="#FAFAFA"
+							/>
+						</svg>
+					</div>
+				</div>
+			</header>
 
-		<!-- Curve Separator (dark -> white) -->
-		<div class="bg-black" aria-hidden="true">
-			<svg
-				class="block w-full h-12 sm:h-20 text-white"
-				viewBox="0 0 1440 96"
-				preserveAspectRatio="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<ellipse cx="720" cy="96" rx="900" ry="96" fill="currentColor" />
-			</svg>
-		</div>
+			<main>
+				<!-- HEADS UP! Section -->
+				<section
+					class="bg-black py-16 px-6 overflow-hidden"
+					aria-labelledby="heads-up-heading"
+				>
+					<div class="font-display text-5xl leading-none">
+						<p class="text-black" aria-hidden="true">HEADS UP!</p>
+						<p class="text-black" aria-hidden="true">HEADS UP!</p>
+						<p class="text-black" aria-hidden="true">HEADS UP!</p>
+						<p class="text-black" aria-hidden="true">HEADS UP!</p>
+						<h2 id="heads-up-heading" class="text-white">HEADS UP!</h2>
+					</div>
+				</section>
 
 		<!-- TICKETS Section -->
 		<section class="bg-white py-16 px-6 text-center" aria-labelledby="tickets-heading">
@@ -631,5 +708,6 @@
 				</p>
 			</div>
 		</footer>
+	</div>
 	</body>
 </html>

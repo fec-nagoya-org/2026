@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
 body {
-	max-width: 402px;
-	margin-left: auto;
-	margin-right: auto;
 	background-image:
 		url("../assets/bg-text-pattern.svg"), url("../assets/bg-mascot.svg");
 	background-repeat: repeat;
@@ -20,12 +17,26 @@ header {
 	background-size: 9px 19px;
 }
 
+.hero-bg-shape {
+	background-color: #fafafa;
+	background-image: url("../assets/bg-mascot-hero.svg");
+	background-repeat: repeat;
+	background-size: 9px 19px;
+	-webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 402 834' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M242 0C330.366 0 402 71.6344 402 160V569C402 680.009 312.009 770 201 770C89.9908 770 0 680.009 0 569V0H242Z' fill='white'/%3E%3C/svg%3E");
+	mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 402 834' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M242 0C330.366 0 402 71.6344 402 160V569C402 680.009 312.009 770 201 770C89.9908 770 0 680.009 0 569V0H242Z' fill='white'/%3E%3C/svg%3E");
+	-webkit-mask-size: 100% 100%;
+	mask-size: 100% 100%;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+}
+
 @theme {
 	--color-accent: #ff6b00;
 	--color-accent-dark: #e55a00;
 
 	--font-display: "Modak", cursive;
 	--font-sans: "Noto Sans JP", sans-serif;
+	--font-role: "Roboto Condensed", sans-serif;
 }
 
 /* Marquee animation for scrolling text bands */
