@@ -40,7 +40,7 @@
 	</head>
 	<body class="font-sans text-black bg-[#fafafa]">
 		<div
-			class="relative mx-auto max-w-[410px] border-x-4 border-t-4 border-[#0a0a0a] bg-white"
+			class="relative mx-auto max-w-[402px] border-x-4 border-y-4 border-[#0a0a0a] bg-white"
 		>
 			<!-- Hero Section -->
 			<header class="relative bg-black text-white overflow-hidden h-[874px]">
@@ -138,7 +138,7 @@
 				<img
 					src="./assets/hero-info.svg"
 					alt="【場所】WINK AICHI（ウインクあいち）【日程】2026.05.09"
-					class="absolute z-10 left-3 top-[228px] w-[248px] h-[44px]"
+					class="absolute z-10 left-3 top-[228px] w-[336px] h-[48px]"
 				/>
 
 				<!-- Starburst decorations -->
@@ -204,17 +204,48 @@
 			</header>
 
 			<main>
+				<!-- 3D Transition Section -->
+				<section class="relative h-[159px] bg-white overflow-hidden" aria-hidden="true">
+					<div class="absolute inset-0 flex items-center justify-center">
+						<img
+							src="./assets/mascot.svg"
+							alt=""
+							class="absolute w-[60px] blur-[2px] opacity-40 top-[20px] left-[30px] animate-fade-float"
+							aria-hidden="true"
+						/>
+						<img
+							src="./assets/mascot.svg"
+							alt=""
+							class="absolute w-[45px] blur-[3px] opacity-30 top-[60px] right-[50px] animate-fade-float"
+							style="animation-delay: 0.5s"
+							aria-hidden="true"
+						/>
+						<img
+							src="./assets/mascot.svg"
+							alt=""
+							class="absolute w-[50px] blur-[2px] opacity-35 bottom-[20px] left-[60%] animate-fade-float"
+							style="animation-delay: 1s"
+							aria-hidden="true"
+						/>
+					</div>
+				</section>
+
 				<!-- HEADS UP! Section -->
 				<section
-					class="bg-black py-16 px-6 overflow-hidden"
+					class="bg-black pb-[120px] pt-16 px-[8px] overflow-hidden rounded-bl-[9999px] rounded-br-[9999px]"
 					aria-labelledby="heads-up-heading"
 				>
-					<div class="font-display text-5xl leading-none">
-						<p class="text-black" aria-hidden="true">HEADS UP!</p>
-						<p class="text-black" aria-hidden="true">HEADS UP!</p>
-						<p class="text-black" aria-hidden="true">HEADS UP!</p>
-						<p class="text-black" aria-hidden="true">HEADS UP!</p>
-						<h2 id="heads-up-heading" class="text-white">HEADS UP!</h2>
+					<div class="font-display text-[80px] leading-none">
+						<p class="text-black h-[64px]" aria-hidden="true">HEADS UP!</p>
+						<p class="text-black h-[64px]" aria-hidden="true">HEADS UP!</p>
+						<p class="text-black h-[64px]" aria-hidden="true">HEADS UP!</p>
+						<p class="text-black h-[64px]" aria-hidden="true">HEADS UP!</p>
+						<h2 id="heads-up-heading" class="text-white h-[64px]">HEADS UP!</h2>
+					</div>
+					<div class="flex flex-col items-center gap-[24px] px-4 mt-12 text-white text-center font-sans text-[18px] font-bold leading-[1.6]">
+						<p>フロントエンドカンファレンスの波がついに名古屋へ！</p>
+						<p>最新のフロントエンド事情と全国のフロントエンドエンジニアが日本の中心に集結！</p>
+						<p>特別な一日をお見逃しなく！<br />「名古屋でもフロカンやるぞー！」</p>
 					</div>
 				</section>
 
