@@ -60,7 +60,7 @@
   </head>
   <body class="font-sans text-black bg-[#fafafa]">
     <div
-      class="relative mx-auto max-w-[402px] border-x-4 border-y-4 border-[#0a0a0a] bg-white"
+      class="relative mx-auto max-w-[402px] border-x-4 border-y-4 border-[#0a0a0a] bg-white overflow-hidden"
     >
       <!-- Hero Section -->
       <header class="relative bg-black text-white overflow-hidden h-[874px]">
@@ -129,15 +129,47 @@
           aria-hidden="true"
         >
           <!-- 3D floating objects (clipped by hero-bg-shape mask) -->
-          <img src="./assets/3d/particle-5.png" alt="" class="absolute blur-[3px] w-[116px] h-[115px] top-[76px] left-[263px]" />
-          <img src="./assets/3d/particle-3.png" alt="" class="absolute blur-[2px] w-[41px] h-[46px] top-[216px] left-[347px]" />
-          <img src="./assets/3d/particle-6.png" alt="" class="absolute blur-[3px] w-[114px] h-[112px] top-[239px] left-[-25px]" />
-          <img src="./assets/3d/particle-2.png" alt="" class="absolute blur-[3px] w-[96px] h-[111px] top-[390px] left-[335px] rotate-[-42.47deg]" />
-          <img src="./assets/3d/particle-2.png" alt="" class="absolute blur-[3px] w-[48px] h-[59px] top-[492px] left-[-7px]" />
-          <img src="./assets/3d/particle-4.png" alt="" class="absolute blur-[2px] w-[238px] h-[212px] top-[607px] left-[5px]" />
-          <img src="./assets/3d/particle-1.png" alt="" class="absolute blur-[3px] w-[81px] h-[96px] top-[620px] left-[321px]" />
+          <img
+            src="./assets/3d/particle-5.png"
+            alt=""
+            class="absolute blur-[3px] w-[116px] h-[115px] top-[76px] left-[263px]"
+          />
+          <img
+            src="./assets/3d/particle-3.png"
+            alt=""
+            class="absolute blur-[2px] w-[41px] h-[46px] top-[216px] left-[347px]"
+          />
+          <img
+            src="./assets/3d/particle-6.png"
+            alt=""
+            class="absolute blur-[3px] w-[114px] h-[112px] top-[239px] left-[-25px]"
+          />
+          <img
+            src="./assets/3d/particle-2.png"
+            alt=""
+            class="absolute blur-[3px] w-[96px] h-[111px] top-[390px] left-[335px] rotate-[-42.47deg]"
+          />
+          <img
+            src="./assets/3d/particle-2.png"
+            alt=""
+            class="absolute blur-[3px] w-[48px] h-[59px] top-[492px] left-[-7px]"
+          />
+          <img
+            src="./assets/3d/particle-4.png"
+            alt=""
+            class="absolute blur-[2px] w-[238px] h-[212px] top-[607px] left-[5px]"
+          />
+          <img
+            src="./assets/3d/particle-1.png"
+            alt=""
+            class="absolute blur-[3px] w-[81px] h-[96px] top-[620px] left-[321px]"
+          />
           <!-- Main 3D mascot -->
-          <img src="./assets/3d/mascot-3d.png" alt="" class="absolute w-[305px] h-[360px] top-[270px] left-[35px] rotate-[9.19deg]" />
+          <img
+            src="./assets/3d/mascot-3d.png"
+            alt=""
+            class="absolute w-[305px] h-[360px] top-[270px] left-[35px] rotate-[9.19deg]"
+          />
         </div>
 
         <!-- Title with black bg blocks -->
@@ -235,11 +267,9 @@
       </header>
 
       <main>
-        <!-- 3D Transition Section -->
-
         <!-- HEADS UP! Section -->
         <section
-          class="bg-black flex flex-col items-center gap-[24px] pb-[120px] overflow-hidden rounded-bl-[9999px] rounded-br-[9999px]"
+          class="relative z-10 bg-black flex flex-col items-center gap-[24px] pb-[120px] overflow-hidden rounded-bl-[9999px] rounded-br-[9999px]"
           aria-labelledby="heads-up-heading"
         >
           <div
@@ -295,6 +325,18 @@
             </p>
           </div>
         </section>
+
+        <!-- 3D Transition Section -->
+        <div
+          class="mt-[-20px] h-[159px] flex items-end justify-center"
+          aria-hidden="true"
+        >
+          <img
+            src="./assets/3d/transition-shape.png"
+            alt=""
+            class="w-[438px] h-[348px] max-w-none shrink-0"
+          />
+        </div>
 
         <!-- TICKETS Section -->
         <section
