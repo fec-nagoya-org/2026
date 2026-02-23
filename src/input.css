@@ -126,6 +126,42 @@ header {
 	opacity: 0;
 }
 
+/* Slow floating animation for background particles (far depth) */
+@keyframes float-slow {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-6px);
+	}
+}
+
+@utility animate-fade-float-slow {
+	animation:
+		fade-in 1s ease-out forwards,
+		float-slow 6s ease-in-out 1s infinite;
+	opacity: 0;
+}
+
+/* Medium floating animation for mid-ground particles */
+@keyframes float-medium {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-8px);
+	}
+}
+
+@utility animate-fade-float-medium {
+	animation:
+		fade-in 1s ease-out forwards,
+		float-medium 4.5s ease-in-out 1s infinite;
+	opacity: 0;
+}
+
 /* Trim font metric whitespace (cap to baseline) */
 @utility text-trim {
 	text-box-trim: trim-both;
