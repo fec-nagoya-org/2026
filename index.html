@@ -73,6 +73,7 @@
         <!-- Top marquee band -->
         <div
           class="relative z-20 bg-[#0a0a0a] py-1 overflow-hidden border-gray-800"
+          aria-hidden="true"
         >
           <div class="inline-flex w-max whitespace-nowrap animate-marquee">
             <div class="flex items-center gap-2 shrink-0 pr-2">
@@ -182,24 +183,25 @@
 
         <!-- Title with black bg blocks -->
         <h1 class="absolute z-10 left-0 top-10 flex flex-col items-start">
+          <span class="sr-only">FRONTEND CONFERENCE NAGOYA</span>
           <span class="bg-[#0a0a0a] px-4 pt-3 pb-1 inline-flex">
             <img
               src="./assets/hero-title-line1.svg"
-              alt="FRONTEND"
+              alt=""
               class="h-9 w-auto"
             />
           </span>
           <span class="bg-[#0a0a0a] px-4 py-3 inline-flex">
             <img
               src="./assets/hero-title-line2.svg"
-              alt="CONFERENCE"
+              alt=""
               class="h-9 w-auto"
             />
           </span>
           <span class="bg-[#0a0a0a] px-4 pt-1 pb-3 inline-flex">
             <img
               src="./assets/hero-title-line3.svg"
-              alt="NAGOYA"
+              alt=""
               class="h-9 w-auto"
             />
           </span>
@@ -208,7 +210,7 @@
         <!-- Venue / Date info -->
         <img
           src="./assets/hero-info.svg"
-          alt="【場所】WINK AICHI（ウインクあいち）【日程】2026.05.09"
+          alt="場所: ウインクあいち（WINK AICHI）、日程: 2026年5月9日 土曜日"
           class="absolute z-10 left-3 top-57 w-84 h-auto"
         />
 
@@ -283,34 +285,34 @@
           <div
             class="font-display text-[80px] leading-none w-full whitespace-nowrap text-center"
           >
-            <p
-              class="text-[#0a0a0a] h-2"
+            <span
+              class="block text-[#0a0a0a] h-2"
               style="-webkit-text-stroke: 1px #fafafa"
               aria-hidden="true"
             >
               HEADS UP!
-            </p>
-            <p
-              class="text-[#0a0a0a] h-2"
+            </span>
+            <span
+              class="block text-[#0a0a0a] h-2"
               style="-webkit-text-stroke: 1px #fafafa"
               aria-hidden="true"
             >
               HEADS UP!
-            </p>
-            <p
-              class="text-[#0a0a0a] h-2"
+            </span>
+            <span
+              class="block text-[#0a0a0a] h-2"
               style="-webkit-text-stroke: 1px #fafafa"
               aria-hidden="true"
             >
               HEADS UP!
-            </p>
-            <p
-              class="text-[#0a0a0a] h-2"
+            </span>
+            <span
+              class="block text-[#0a0a0a] h-2"
               style="-webkit-text-stroke: 1px #fafafa"
               aria-hidden="true"
             >
               HEADS UP!
-            </p>
+            </span>
             <h2 id="heads-up-heading" class="text-white h-16">HEADS UP!</h2>
           </div>
           <div
