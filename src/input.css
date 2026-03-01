@@ -11,7 +11,7 @@ body {
 	background-attachment: fixed;
 }
 
-header {
+.hero-header {
 	background-image: url("../assets/bg-mascot-light.svg");
 	background-repeat: repeat;
 	background-size: 9px 19px;

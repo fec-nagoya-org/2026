@@ -62,6 +62,16 @@ bun run check        # Biome lint / format（自動修正）
 - JavaScript文字列はダブルクォート
 - Biomeのrecommended rulesに準拠
 
+### スタイリング方針
+
+- スタイルは可能な限りTailwind CSSのユーティリティクラスでHTML側に記述する
+- `src/input.css` に素のCSSを書くのは以下の場合のみ:
+  - `@theme`: テーマ変数の定義
+  - `@keyframes` + `@utility`: Tailwindカスタムユーティリティの定義
+  - CSS mask、複数gradient重ねなど、Tailwindのユーティリティでは表現できない複雑なスタイル
+  - `prefers-reduced-motion` 等のグローバルなメディアクエリ
+- 要素セレクタ（`div`, `header` 等）への直接スタイル指定は避け、クラスセレクタを使用する
+
 ## Deploy
 
 - GitHub Pages（静的配信）
