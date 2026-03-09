@@ -350,113 +350,115 @@
 
 				<!-- TICKETS Section -->
 				<section
-					class="py-16 px-6 text-center"
+					class="pb-8 px-6 text-center"
 					aria-labelledby="tickets-heading"
 				>
-					<div class="max-w-sm mx-auto">
+					<div class="flex flex-col gap-3 items-center mx-auto max-w-sm">
 						<h2
 							id="tickets-heading"
-							class="font-display text-5xl sm:text-6xl mb-4"
+							class="font-display text-[64px] leading-none text-trim"
 						>
 							TICKETS
 						</h2>
-						<p class="text-lg mb-8">チケットはForteeで販売中！</p>
-						<div class="space-y-2 mb-2">
-							<p class="text-xs text-gray-500">
-								セッション聴講・スポンサー観覧はこちら！
-							</p>
+						<p class="font-black text-base leading-none">
+							チケットはForteeで販売中！
+						</p>
+						<div class="flex flex-col gap-2 items-center">
+							<!-- Primary Button with balloon label & mascot -->
+							<div class="relative mt-1.75">
+								<!-- Balloon label -->
+								<div class="absolute -top-1.75 left-1.75 w-55 h-6">
+									<img
+										src="./assets/tickets-balloon.svg"
+										alt=""
+										class="absolute inset-0 w-full h-full"
+									>
+									<span
+										class="relative z-10 flex items-center justify-center w-full h-full font-black text-[10px]"
+										>セッション聴講・スポンサー観覧はこちら！</span
+									>
+								</div>
+								<!-- Mascot icon -->
+								<img
+									src="./assets/tickets-mascot.svg"
+									alt=""
+									class="absolute -top-1 right-3 w-12 h-13.75 z-10 pointer-events-none"
+									aria-hidden="true"
+								>
+								<a
+									href="https://fortee.jp/fec-nagoya-2026/ticket-shop/index/efcd9624-5127-49bb-a88b-e17b5231311b"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="flex items-center justify-center bg-[#0a0a0a] text-[#fafafa] font-black text-lg leading-none text-trim h-10 px-4 rounded w-72 text-center mt-6 hover:opacity-80 transition-opacity"
+									>本編チケットを購入<span class="sr-only"
+										>（新しいタブで開きます）</span
+									></a
+								>
+							</div>
 							<a
-								href="https://fortee.jp/fec-nagoya-2026/ticket-shop/index/efcd9624-5127-49bb-a88b-e17b5231311b"
+								href="https://fortee.jp/fec-nagoya-2026/ticket-shop/index/04a39d7f-5dbc-4c11-b5c7-90d192c07392"
 								target="_blank"
 								rel="noopener noreferrer"
-								class="block bg-black text-white font-bold py-3 px-8 rounded-full text-center hover:opacity-80 transition-opacity"
-								>観覧チケットを購入</a
+								class="flex items-center justify-center bg-white bg-[url('assets/bg-mascot-section.svg')] bg-size-[7px_14px] bg-repeat border-2 border-[#0a0a0a] text-[#0a0a0a] font-black text-lg leading-none text-trim h-10 px-4 rounded w-72 text-center hover:opacity-80 transition-opacity"
+								>懇親会チケットを購入<span class="sr-only"
+									>（新しいタブで開きます）</span
+								></a
 							>
+							<p class="text-[10px]">※外部サイトを開きます</p>
 						</div>
-						<a
-							href="https://fortee.jp/fec-nagoya-2026/ticket-shop/index/04a39d7f-5dbc-4c11-b5c7-90d192c07392"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="block border-2 border-black text-black font-bold py-3 px-8 rounded-full text-center hover:bg-black hover:text-white transition-colors"
-							>懇親会チケットを購入</a
-						>
-						<p class="text-xs text-gray-400 mt-4">※外部サイトを開きます</p>
-					</div>
-				</section>
-
-				<!-- TIMETABLE Section -->
-				<section
-					class="py-16 px-6 text-center"
-					aria-labelledby="timetable-heading"
-				>
-					<div class="max-w-sm mx-auto">
-						<h2
-							id="timetable-heading"
-							class="font-display text-5xl sm:text-6xl mb-4"
-						>
-							TIMETABLE
-						</h2>
-						<p class="text-sm text-gray-500 mb-6">タイムテーブルを確認</p>
-						<a
-							href="https://fortee.jp/fec-nagoya-2026/organizer/timetable-editor/index"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="inline-block bg-black text-white font-bold py-3 px-8 rounded-full hover:opacity-80 transition-opacity"
-							>タイムテーブルをひらく</a
-						>
-						<p class="text-xs text-gray-400 mt-4">※外部サイトを開きます</p>
 					</div>
 				</section>
 
 				<!-- LINKS Section -->
-				<section class="py-16 px-6 text-center" aria-labelledby="links-heading">
-					<div class="max-w-sm mx-auto">
+				<section
+					class="pt-8 pb-12 px-6 text-center"
+					aria-labelledby="links-heading"
+				>
+					<div class="flex flex-col gap-3 items-center mx-auto max-w-sm">
 						<h2
 							id="links-heading"
-							class="font-display text-5xl sm:text-6xl mb-4"
+							class="font-display text-[64px] leading-none text-trim"
 						>
 							LINKS
 						</h2>
-						<p class="text-lg mb-8">各種SNSで情報発信中！</p>
-						<div class="space-y-3">
+						<p class="font-black text-base leading-relaxed">
+							各種SNSで情報発信中！
+						</p>
+						<div class="flex flex-col gap-2 items-center">
 							<a
 								href="https://x.com/fec_nagoya"
 								target="_blank"
 								rel="noopener noreferrer"
-								class="flex items-center justify-center gap-2 bg-black text-white font-bold py-3 px-8 rounded-full hover:opacity-80 transition-opacity"
+								class="flex items-center justify-center gap-4 bg-[#0a0a0a] text-[#fafafa] font-bold text-base leading-none text-trim h-10 px-8 rounded w-72 hover:opacity-80 transition-opacity"
 							>
-								<svg
+								<img
+									src="./assets/icon-x.svg"
+									alt=""
 									class="w-5 h-5"
-									viewBox="0 0 24 24"
-									fill="currentColor"
 									aria-hidden="true"
 								>
-									<path
-										d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-									/>
-								</svg>
-								公式Xをひらく
+								公式Xをひらく<span class="sr-only"
+									>（新しいタブで開きます）</span
+								>
 							</a>
 							<a
 								href="https://note.com/fec_nagoya"
 								target="_blank"
 								rel="noopener noreferrer"
-								class="flex items-center justify-center gap-2 bg-black text-white font-bold py-3 px-8 rounded-full hover:opacity-80 transition-opacity"
+								class="flex items-center justify-center gap-4 bg-[#fafafa] border-2 border-[#0a0a0a] text-[#0a0a0a] font-black text-base leading-none text-trim h-10 px-8 rounded w-72 hover:opacity-80 transition-opacity"
 							>
-								<svg
+								<img
+									src="./assets/icon-note.svg"
+									alt=""
 									class="w-5 h-5"
-									viewBox="0 0 24 24"
-									fill="currentColor"
 									aria-hidden="true"
 								>
-									<path
-										d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
-									/>
-								</svg>
-								公式noteをひらく
+								公式noteをひらく<span class="sr-only"
+									>（新しいタブで開きます）</span
+								>
 							</a>
+							<p class="text-[10px]">※外部サイトを開きます</p>
 						</div>
-						<p class="text-xs text-gray-400 mt-4">※外部サイトを開きます</p>
 					</div>
 				</section>
 
