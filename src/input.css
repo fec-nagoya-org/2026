@@ -418,6 +418,10 @@ body {
 
 /* Respect user's motion preference */
 @media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto !important;
+	}
+
 	*,
 	*::before,
 	*::after {
