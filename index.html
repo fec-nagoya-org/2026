@@ -53,7 +53,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Modak&family=Noto+Sans+JP:wght@400;500;700;900&family=Roboto+Condensed:ital,wght@1,900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Modak&family=Noto+Sans:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Roboto+Condensed:ital,wght@1,900&display=swap"
 			rel="stylesheet"
 		>
 		<link rel="stylesheet" href="./style.css">
@@ -460,415 +460,586 @@
 					</div>
 				</section>
 
-				<!-- Curve Separator (white -> white with line) -->
-				<div aria-hidden="true">
-					<svg
-						class="block w-full h-6"
-						viewBox="0 0 1440 24"
-						preserveAspectRatio="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M0,24 Q720,0 1440,24"
-							fill="none"
-							stroke="black"
-							stroke-width="2"
-						/>
-					</svg>
-				</div>
+				<div class="location-wave location-wave--top" aria-hidden="true"></div>
 
 				<!-- LOCATION Section -->
 				<section
-					class="py-16 px-6 text-center"
+					class="location-shell relative overflow-hidden px-8 pt-6 pb-12 text-white"
 					aria-labelledby="location-heading"
 				>
-					<div class="max-w-lg mx-auto">
-						<p class="text-sm text-gray-400 mb-2">Access</p>
-						<h2
-							id="location-heading"
-							class="font-display text-5xl sm:text-6xl mb-4"
+					<div
+						class="relative z-10 mx-auto flex max-w-lg flex-col items-center gap-10"
+					>
+						<div
+							class="flex w-[259.86px] max-w-full flex-col items-center pb-2 text-center"
 						>
-							LOCATION
-						</h2>
-						<p class="text-xl font-bold mb-2">ウインクあいち</p>
-						<p class="text-sm text-gray-500 mb-10">
-							愛知県名古屋市中村区名駅4丁目4-38
-						</p>
-
-						<!-- Train Access -->
-						<div class="mb-10">
-							<div class="flex items-center gap-4 mb-6">
-								<div class="flex-1 h-px bg-gray-300"></div>
-								<span class="text-sm font-medium whitespace-nowrap"
-									>電車でお越しの方</span
+							<h2 id="location-heading" class="sr-only">LOCATION</h2>
+							<div
+								class="relative mb-[-8px] h-[38.685px] w-[151.377px] shrink-0"
+								aria-hidden="true"
+							>
+								<img
+									src="./assets/location-header-title.svg"
+									alt=""
+									class="absolute block size-full max-w-none"
 								>
-								<div class="flex-1 h-px bg-gray-300"></div>
 							</div>
-							<div class="flex items-center justify-center gap-4 mb-4">
-								<div class="text-center">
-									<p class="text-xs mb-1">名古屋駅</p>
-									<div
-										class="w-16 h-16 border-2 border-black rounded-lg flex items-center justify-center"
-									>
-										<svg
-											class="w-8 h-8"
-											viewBox="0 0 24 24"
-											fill="currentColor"
-											aria-hidden="true"
-										>
-											<path
-												d="M12 2c-4 0-8 .5-8 4v9.5C4 17.43 5.57 19 7.5 19L6 20.5v.5h12v-.5L16.5 19c1.93 0 3.5-1.57 3.5-3.5V6c0-3.5-4-4-8-4zM7.5 17c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm3.5-6H6V6h5v5zm2 0V6h5v5h-5zm3.5 6c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
-											/>
-										</svg>
-									</div>
-								</div>
-								<div class="flex flex-col items-center">
-									<svg
-										class="w-6 h-6 text-gray-400"
-										viewBox="0 0 24 24"
-										fill="currentColor"
-										aria-hidden="true"
-									>
-										<path
-											d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7"
-										/>
-									</svg>
-									<div class="w-24 h-px bg-black relative">
-										<div
-											class="absolute -right-1 -top-1 w-0 h-0 border-t-4 border-t-transparent border-b-4 border-b-transparent border-l-8 border-l-black"
-										></div>
-									</div>
-									<span class="text-xs text-gray-500">5~10min</span>
-								</div>
-								<div class="text-center">
-									<p class="text-xs mb-1">ウインクあいち</p>
-									<div
-										class="w-16 h-16 border-2 border-black rounded-lg flex items-center justify-center"
-									>
-										<svg
-											class="w-8 h-8"
-											viewBox="0 0 24 24"
-											fill="currentColor"
-											aria-hidden="true"
-										>
-											<path
-												d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"
-											/>
-										</svg>
-									</div>
-								</div>
+							<div
+								class="relative mb-2 h-[33.831px] w-[21.528px] shrink-0"
+								aria-hidden="true"
+							>
+								<img
+									src="./assets/location-header-pin.svg"
+									alt=""
+									class="absolute block size-full max-w-none"
+								>
 							</div>
-							<p class="text-xs text-gray-500 leading-relaxed">
-								JR名古屋駅桜通口: ミッドランドスクエア方面徒歩5分
-								<br>
-								JR新幹線口: 徒歩9分
-							</p>
+							<div
+								class="relative h-9 w-[259.86px] max-w-full shrink-0"
+								aria-hidden="true"
+							>
+								<img
+									src="./assets/location-header-curve.svg"
+									alt=""
+									class="absolute block size-full max-w-none"
+								>
+							</div>
 						</div>
 
-						<!-- Airplane Access -->
-						<div>
-							<div class="flex items-center gap-4 mb-6">
-								<div class="flex-1 h-px bg-gray-300"></div>
-								<span class="text-sm font-medium whitespace-nowrap"
-									>飛行機でお越しの方</span
-								>
-								<div class="flex-1 h-px bg-gray-300"></div>
-							</div>
-							<div class="flex items-center justify-center gap-2 sm:gap-4 mb-4">
-								<div class="text-center">
-									<p class="text-xs mb-1">中部国際空港</p>
-									<div
-										class="w-16 h-16 border-2 border-black rounded-lg flex items-center justify-center"
-									>
-										<svg
-											class="w-8 h-8"
-											viewBox="0 0 24 24"
-											fill="currentColor"
-											aria-hidden="true"
-										>
-											<path
-												d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"
-											/>
-										</svg>
-									</div>
-								</div>
-								<div class="flex flex-col items-center">
-									<div class="w-12 sm:w-16 h-px bg-black relative">
-										<div
-											class="absolute -right-1 -top-1 w-0 h-0 border-t-4 border-t-transparent border-b-4 border-b-transparent border-l-8 border-l-black"
-										></div>
-									</div>
-									<span class="text-xs text-gray-500">30min</span>
-								</div>
-								<div class="text-center">
-									<p class="text-xs mb-1">名古屋駅</p>
-									<div
-										class="w-16 h-16 border-2 border-black rounded-lg flex items-center justify-center"
-									>
-										<svg
-											class="w-8 h-8"
-											viewBox="0 0 24 24"
-											fill="currentColor"
-											aria-hidden="true"
-										>
-											<path
-												d="M12 2c-4 0-8 .5-8 4v9.5C4 17.43 5.57 19 7.5 19L6 20.5v.5h12v-.5L16.5 19c1.93 0 3.5-1.57 3.5-3.5V6c0-3.5-4-4-8-4zM7.5 17c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm3.5-6H6V6h5v5zm2 0V6h5v5h-5zm3.5 6c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
-											/>
-										</svg>
-									</div>
-								</div>
-								<div class="flex flex-col items-center">
-									<svg
-										class="w-6 h-6 text-gray-400"
-										viewBox="0 0 24 24"
-										fill="currentColor"
+						<div class="flex w-full flex-col gap-6">
+							<figure class="location-route-section mx-auto">
+								<div class="location-route-header location-route-header--train">
+									<span
 										aria-hidden="true"
-									>
+										class="location-route-header-line"
+									></span>
+									<h3 class="location-route-header-title">電車でお越しの方</h3>
+									<span
+										aria-hidden="true"
+										class="location-route-header-line"
+									></span>
+								</div>
+								<img
+									src="./assets/location-train-section.svg"
+									alt=""
+									aria-hidden="true"
+									class="location-route-content location-route-content--train"
+								>
+								<figcaption>
+									<ul class="location-route-description">
+										<li>JR名古屋駅桜通口: ミッドランドスクエア方面徒歩5分</li>
+										<li>JR新幹線口: 徒歩9分</li>
+									</ul>
+								</figcaption>
+							</figure>
+
+							<figure class="location-route-section mx-auto">
+								<div
+									class="location-route-header location-route-header--flight"
+								>
+									<span
+										aria-hidden="true"
+										class="location-route-header-line"
+									></span>
+									<h3 class="location-route-header-title">
+										飛行機でお越しの方
+									</h3>
+									<span
+										aria-hidden="true"
+										class="location-route-header-line"
+									></span>
+								</div>
+								<img
+									src="./assets/location-flight-section.svg"
+									alt=""
+									aria-hidden="true"
+									class="location-route-content location-route-content--flight"
+								>
+								<figcaption>
+									<ul class="location-route-description">
+										<li>中部国際空港から名古屋駅: 名鉄空港線30分</li>
+										<li>名古屋駅からウインクあいち: 徒歩9分</li>
+									</ul>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="w-full">
+							<div class="location-map-frame">
+								<div
+									id="location-map"
+									class="block h-72 w-full"
+									aria-label="名古屋駅からウインクあいちまでの徒歩経路地図"
+									hidden
+								></div>
+								<iframe
+									id="location-map-fallback"
+									title="ウインクあいちへの地図"
+									src="https://www.google.com/maps?q=%E3%82%A6%E3%82%A4%E3%83%B3%E3%82%AF%E3%81%82%E3%81%84%E3%81%A1%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E6%9D%91%E5%8C%BA%E5%90%8D%E9%A7%854%E4%B8%81%E7%9B%AE4-38&z=16&output=embed"
+									class="block h-72 w-full"
+									loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"
+								></iframe>
+							</div>
+						</div>
+						<div class="location-route-link-group">
+							<a
+								href="https://www.google.com/maps/dir/?api=1&destination=%E3%82%A6%E3%82%A4%E3%83%B3%E3%82%AF%E3%81%82%E3%81%84%E3%81%A1%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E6%9D%91%E5%8C%BA%E5%90%8D%E9%A7%854%E4%B8%81%E7%9B%AE4-38"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="location-route-link"
+							>
+								<span class="location-route-link-label"
+									>会場までのルートをみる</span
+								>
+								<span class="location-route-link-icon" aria-hidden="true">
+									<svg class="size-4" viewBox="0 0 24 24" fill="currentColor">
 										<path
-											d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7"
+											d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
 										/>
 									</svg>
-									<div class="w-12 sm:w-16 h-px bg-black relative">
-										<div
-											class="absolute -right-1 -top-1 w-0 h-0 border-t-4 border-t-transparent border-b-4 border-b-transparent border-l-8 border-l-black"
-										></div>
-									</div>
-									<span class="text-xs text-gray-500">5~10min</span>
-								</div>
-								<div class="text-center">
-									<p class="text-xs mb-1">ウインクあいち</p>
-									<div
-										class="w-16 h-16 border-2 border-black rounded-lg flex items-center justify-center"
-									>
-										<svg
-											class="w-8 h-8"
-											viewBox="0 0 24 24"
-											fill="currentColor"
-											aria-hidden="true"
-										>
-											<path
-												d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"
-											/>
-										</svg>
-									</div>
-								</div>
-							</div>
-							<p class="text-xs text-gray-500 leading-relaxed">
-								中部国際空港から名古屋駅: 名鉄空港線30分
-								<br>
-								名古屋駅からウインクあいち: 徒歩9分
-							</p>
+								</span>
+							</a>
+							<p class="location-route-link-note">※Google Mapを開きます</p>
 						</div>
 					</div>
 				</section>
 
-				<!-- Curve Separator (white -> white with line) -->
-				<div aria-hidden="true">
-					<svg
-						class="block w-full h-6"
-						viewBox="0 0 1440 24"
-						preserveAspectRatio="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M0,0 Q720,24 1440,0"
-							fill="none"
-							stroke="black"
-							stroke-width="2"
-						/>
-					</svg>
-				</div>
+				<div
+					class="location-wave location-wave--bottom"
+					aria-hidden="true"
+				></div>
 
 				<!-- SPONSORS Section -->
 				<section
-					class="py-16 px-6 text-center"
+					class="pt-12 pb-2 px-4 text-center"
 					aria-labelledby="sponsors-heading"
 				>
-					<div class="max-w-lg mx-auto">
+					<div class="flex flex-col gap-4 items-center max-w-92.5 mx-auto">
 						<h2
 							id="sponsors-heading"
-							class="font-display text-5xl sm:text-6xl mb-12"
+							class="font-display text-[64px] leading-none"
 						>
 							SPONSORS
 						</h2>
 
 						<!-- Platinum Sponsors -->
-						<div class="mb-12">
-							<h3 class="font-display text-xl mb-6">PLATINUM SPONSORS</h3>
-							<div class="space-y-3">
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-							</div>
+						<div class="flex flex-col gap-2 items-center w-full">
+							<h3 class="font-display text-[32px] leading-none">
+								PLATINUM SPONSORS
+							</h3>
+							<ul class="flex flex-col gap-2 w-full list-none">
+								<li>
+									<a
+										href="https://corp.kaonavi.jp/"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="block"
+									>
+										<img
+											src="assets/sponsors/platinum/kaonavi.png"
+											alt="kaonavi"
+											class="w-full aspect-320/180 object-contain bg-white"
+										>
+										<span class="sr-only">（外部サイトを開く）</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://stmn.co.jp/"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="block"
+									>
+										<img
+											src="assets/sponsors/platinum/stmn.png"
+											alt="stmn"
+											class="w-full aspect-320/180 object-contain bg-white"
+										>
+										<span class="sr-only">（外部サイトを開く）</span>
+									</a>
+								</li>
+							</ul>
 						</div>
 
 						<!-- Gold Sponsors -->
-						<div class="mb-12">
-							<h3 class="font-display text-xl mb-6">GOLD SPONSORS</h3>
-							<div class="space-y-3">
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-							</div>
+						<div class="flex flex-col gap-2 items-center w-full">
+							<h3 class="font-display text-[32px] leading-none">
+								GOLD SPONSORS
+							</h3>
+							<ul class="flex flex-col gap-2 w-full list-none">
+								<li>
+									<a
+										href="https://leaner.co.jp/"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="block"
+									>
+										<img
+											src="assets/sponsors/gold/leaner.jpg"
+											alt="Leaner"
+											class="w-full aspect-320/180 object-contain bg-white"
+										>
+										<span class="sr-only">（外部サイトを開く）</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://developers.prtimes.jp/"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="block"
+									>
+										<img
+											src="assets/sponsors/gold/prtimes.png"
+											alt="PR TIMES"
+											class="w-full aspect-320/180 object-contain bg-white"
+										>
+										<span class="sr-only">（外部サイトを開く）</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://kokorozashi-japan.co.jp/"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="block"
+									>
+										<img
+											src="assets/sponsors/gold/kokorozashi.png"
+											alt="kokorozashi"
+											class="w-full aspect-320/180 object-contain bg-white"
+										>
+										<span class="sr-only">（外部サイトを開く）</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://chot-inc.com/"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="block"
+									>
+										<img
+											src="assets/sponsors/gold/chot_inc.png"
+											alt="chot inc."
+											class="w-full aspect-320/180 object-contain bg-white"
+										>
+										<span class="sr-only">（外部サイトを開く）</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://codecast.jp/"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="block"
+									>
+										<img
+											src="assets/sponsors/gold/codecast.jpg"
+											alt="Codecast"
+											class="w-full aspect-320/180 object-contain bg-white"
+										>
+										<span class="sr-only">（外部サイトを開く）</span>
+									</a>
+								</li>
+							</ul>
 						</div>
 
 						<!-- Silver Sponsors -->
-						<div class="mb-12">
-							<h3 class="font-display text-xl mb-6">SILVER SPONSORS</h3>
-							<div class="grid grid-cols-2 gap-3">
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-							</div>
+						<div class="flex flex-col gap-2 items-center w-full">
+							<h3 class="font-display text-[32px] leading-none">
+								SILVER SPONSORS
+							</h3>
+							<ul class="flex flex-col gap-2 items-center w-full list-none">
+								<li class="w-1/2">
+									<a
+										href="https://www.reiwatravel.co.jp/"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="block"
+									>
+										<img
+											src="assets/sponsors/silver/reiwa_travel.png"
+											alt="令和トラベル"
+											class="w-full aspect-320/180 object-contain bg-white"
+										>
+										<span class="sr-only">（外部サイトを開く）</span>
+									</a>
+								</li>
+							</ul>
 						</div>
 
 						<!-- Bronze Sponsors -->
-						<div>
-							<h3 class="font-display text-xl mb-6">BRONZE SPONSORS</h3>
-							<div class="grid grid-cols-2 gap-3">
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-								<div
-									class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-								>
-									<span class="text-gray-300 text-sm">Sponsor</span>
-								</div>
-							</div>
+						<div class="flex flex-col gap-2 items-center w-full">
+							<h3 class="font-display text-[32px] leading-none">
+								BRONZE SPONSORS
+							</h3>
+							<ul class="grid grid-cols-2 gap-3 w-full list-none">
+								<li>
+									<a
+										href="https://x.com/localtech_JP"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="block"
+									>
+										<img
+											src="assets/sponsors/bronze/local_tech.png"
+											alt="Local Tech"
+											class="w-full aspect-320/180 object-contain bg-white"
+										>
+										<span class="sr-only">（外部サイトを開く）</span>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://2026.tskaigi.org"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="block"
+									>
+										<img
+											src="assets/sponsors/bronze/tskaigi.png"
+											alt="TSKaigi"
+											class="w-full aspect-320/180 object-contain bg-white"
+										>
+										<span class="sr-only">（外部サイトを開く）</span>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</section>
 
 				<!-- Decorative Stripe Banner -->
-				<div
-					class="overflow-hidden bg-black py-4 -rotate-2 scale-105"
-					aria-hidden="true"
-				>
-					<div class="flex whitespace-nowrap">
-						<span class="font-display text-2xl text-white mx-6"
-							>NAGOYA 2026 FRONTEND CONFERENCE NAGOYA 2026 FRONTEND CONFERENCE
-							NAGOYA 2026 FRONTEND CONFERENCE NAGOYA 2026 FRONTEND CONFERENCE</span
-						>
+				<div class="relative h-48 overflow-hidden" aria-hidden="true">
+					<!-- Band 1 (背面): -8deg, 下寄り -->
+					<div
+						class="absolute inset-0 flex items-center justify-center translate-y-8"
+					>
+						<div class="bg-[#0a0a0a] py-1 w-[250%] -rotate-[8deg]">
+							<div class="inline-flex w-max whitespace-nowrap animate-marquee">
+								<div class="flex items-center gap-2 shrink-0 pr-2">
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+								</div>
+								<div class="flex items-center gap-2 shrink-0 pr-2">
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Band 2: +9deg, 上寄り -->
+					<div
+						class="absolute inset-0 flex items-center justify-center -translate-y-10"
+					>
+						<div class="bg-[#0a0a0a] py-1 w-[250%] rotate-[9deg]">
+							<div
+								class="inline-flex w-max whitespace-nowrap animate-marquee-reverse"
+							>
+								<div class="flex items-center gap-2 shrink-0 pr-2">
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+								</div>
+								<div class="flex items-center gap-2 shrink-0 pr-2">
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Band 3: -8deg, 上寄り -->
+					<div
+						class="absolute inset-0 flex items-center justify-center -translate-y-8"
+					>
+						<div class="bg-[#0a0a0a] py-1 w-[250%] -rotate-[8deg]">
+							<div class="inline-flex w-max whitespace-nowrap animate-marquee">
+								<div class="flex items-center gap-2 shrink-0 pr-2">
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+								</div>
+								<div class="flex items-center gap-2 shrink-0 pr-2">
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Band 4 (前面): +9deg, 下寄り -->
+					<div
+						class="absolute inset-0 flex items-center justify-center translate-y-10"
+					>
+						<div class="bg-[#0a0a0a] py-1 w-[250%] rotate-[9deg]">
+							<div
+								class="inline-flex w-max whitespace-nowrap animate-marquee-reverse"
+							>
+								<div class="flex items-center gap-2 shrink-0 pr-2">
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+								</div>
+								<div class="flex items-center gap-2 shrink-0 pr-2">
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>FRONTEND CONFERENCE NAGOYA 2026</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+									>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<!-- JOB BOARD Section -->
 				<section
-					class="py-16 px-6 text-center"
+					class="py-16 px-4 text-center"
 					aria-labelledby="job-board-heading"
 				>
 					<div class="max-w-lg mx-auto">
 						<h2
 							id="job-board-heading"
-							class="font-display text-5xl sm:text-6xl mb-8"
+							class="font-display text-5xl sm:text-6xl mb-0"
 						>
 							JOB BOARD
 						</h2>
-						<div class="space-y-3">
-							<div
-								class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-							>
-								<span class="text-gray-300 text-sm">Coming Soon</span>
-							</div>
-							<div
-								class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-							>
-								<span class="text-gray-300 text-sm">Coming Soon</span>
-							</div>
-							<div
-								class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-							>
-								<span class="text-gray-300 text-sm">Coming Soon</span>
-							</div>
-							<div
-								class="border border-gray-200 rounded-lg aspect-video flex items-center justify-center bg-gray-50"
-							>
-								<span class="text-gray-300 text-sm">Coming Soon</span>
-							</div>
-						</div>
+						<ul class="space-y-3 list-none">
+							<li class="rounded-lg overflow-hidden">
+								<img
+									src="./assets/job-board/reiwatravel.png"
+									alt="令和トラベル Mission: テクノロジーを駆使し、旅行の未来を創る。NEWT（ニュート）かしこい、おトク、旅行アプリ。エンジニア採用中"
+									class="w-full aspect-video object-cover"
+									width="1920"
+									height="1080"
+									loading="lazy"
+									decoding="async"
+								>
+							</li>
+						</ul>
 					</div>
 				</section>
 			</main>
@@ -972,5 +1143,10 @@
 				</div>
 			</footer>
 		</div>
+		<script>
+		window.FEC_NAGOYA_GOOGLE_MAPS_API_KEY =
+			"AIzaSyBko06UEIfITnhEF1Y4YF7jmmzAvjKjQVI";
+		</script>
+		<script src="./src/location-map.js"></script>
 	</body>
 </html>
