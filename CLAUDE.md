@@ -63,6 +63,10 @@ bun run check        # Biome lint / format（自動修正）
 - JavaScript文字列はダブルクォート
 - Biomeのrecommended rulesに準拠
 
+### ファイル配置
+
+- JavaScriptファイルは `src/` 配下に置く
+
 ### スタイリング方針
 
 - スタイルは可能な限りTailwind CSSのユーティリティクラスでHTML側に記述する
