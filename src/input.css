@@ -393,6 +393,29 @@ body {
 	text-box-edge: cap alphabetic;
 }
 
+/* Footer wave separator (CSS mask approach, same pattern as .location-wave) */
+.footer-wave {
+	--footer-wave-height: 25px;
+	--footer-wave-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 402 25' preserveAspectRatio='none'%3E%3Cpath fill='black' d='M402 25H0V0C11.8022 0 17.6052 4.83497 23.8232 10.0312C30.1709 15.3359 36.9328 21 50.2588 21C63.5851 20.9999 70.3384 15.3358 76.6816 10.0312C82.8943 4.83596 88.6972 0.000137535 100.517 0C112.337 0 118.141 4.8358 124.354 10.0312C130.697 15.3357 137.449 20.9999 150.775 21C164.102 21 170.855 15.3353 177.194 10.0303C183.404 4.83427 189.198 0 201 0C212.802 2.60452e-07 218.605 4.83497 224.823 10.0312C231.171 15.3359 237.933 21 251.259 21C264.585 20.9999 271.338 15.3352 277.678 10.0303C283.887 4.83436 289.682 0 301.483 0C313.286 0.000131961 319.097 4.83604 325.319 10.0322C331.67 15.3359 338.432 20.9999 351.741 21C365.05 21 371.812 15.3358 378.163 10.0322C384.385 4.83597 390.197 0 402 0V25Z'/%3E%3C/svg%3E");
+	position: relative;
+	height: var(--footer-wave-height);
+	overflow: hidden;
+	margin-bottom: -1px;
+}
+
+.footer-wave::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: #0a0a0a;
+	-webkit-mask-image: var(--footer-wave-mask);
+	mask-image: var(--footer-wave-mask);
+	-webkit-mask-size: 100% 100%;
+	mask-size: 100% 100%;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+}
+
 /* Respect user's motion preference */
 @media (prefers-reduced-motion: reduce) {
 	*,
