@@ -35,6 +35,7 @@ bun run check        # Biome lint / format（自動修正）
 - `assets/` - 画像アセット（ロゴ、OGP画像、favicon等）
   - `assets/staff-icon/` - スタッフアイコン画像。ファイル名は各スタッフのTwitter IDに対応。ただし `info.gyuh.ooo` のアイコンのみ外部URL直接参照
 - `server.js` - Bun製の開発用静的ファイルサーバー（port 3000、起動時にブラウザを自動オープン）
+- `src/location-map.js` - Google Maps APIを使った経路マップの描画スクリプト
 - `biome.json` - Biome設定（インデント: タブ、クォート: ダブル、recommended rules、Tailwindディレクティブ対応）
 - `lefthook.yml` - pre-commit: Biome check、post-merge: bun.lock変更時に自動 `bun install`
 
@@ -61,6 +62,11 @@ bun run check        # Biome lint / format（自動修正）
 - インデントはタブ
 - JavaScript文字列はダブルクォート
 - Biomeのrecommended rulesに準拠
+
+### ファイル配置
+
+- `server.js`（開発用サーバー）はルートに置く
+- その他のJavaScriptファイルは `src/` 配下に置く
 
 ### スタイリング方針
 
