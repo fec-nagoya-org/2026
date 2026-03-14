@@ -74,7 +74,7 @@
 
 				<!-- Top marquee band -->
 				<div
-					class="relative z-20 bg-[#0a0a0a] py-1 overflow-hidden border-gray-800"
+					class="relative z-20 bg-[#0a0a0a] py-1 overflow-hidden border-gray-800 pointer-events-none select-none"
 					aria-hidden="true"
 				>
 					<div class="inline-flex w-max whitespace-nowrap animate-marquee">
@@ -127,7 +127,7 @@
 
 				<!-- White rounded background shape with mascot pattern + 3D objects -->
 				<div
-					class="absolute left-0 top-10 w-100.5 hero-bg-shape"
+					class="absolute left-0 top-10 w-100.5 hero-bg-shape pointer-events-none select-none"
 					style="height: 834px"
 					aria-hidden="true"
 				>
@@ -211,7 +211,7 @@
 					alt=""
 					width="120"
 					height="120"
-					class="absolute z-10 w-5.75 h-auto animate-spin-slow top-25.5 right-3.75"
+					class="absolute z-10 w-5.75 h-auto animate-spin-slow top-25.5 right-3.75 pointer-events-none select-none"
 					aria-hidden="true"
 				>
 				<!-- Top-right large (~52px) -->
@@ -220,7 +220,7 @@
 					alt=""
 					width="120"
 					height="120"
-					class="absolute z-10 w-13 h-auto animate-spin-slow top-32.75 -right-4.25"
+					class="absolute z-10 w-13 h-auto animate-spin-slow top-32.75 -right-4.25 pointer-events-none select-none"
 					aria-hidden="true"
 				>
 				<!-- Bottom-left large (~100px) -->
@@ -229,7 +229,7 @@
 					alt=""
 					width="120"
 					height="120"
-					class="absolute z-10 w-25 h-auto animate-spin-slow top-182.25 left-10.75"
+					class="absolute z-10 w-25 h-auto animate-spin-slow top-182.25 left-10.75 pointer-events-none select-none"
 					aria-hidden="true"
 				>
 				<!-- Bottom-left medium (~50px) -->
@@ -238,7 +238,7 @@
 					alt=""
 					width="120"
 					height="120"
-					class="absolute z-10 w-12.5 h-auto animate-spin-slow top-170.75 -left-1.5"
+					class="absolute z-10 w-12.5 h-auto animate-spin-slow top-170.75 -left-1.5 pointer-events-none select-none"
 					aria-hidden="true"
 				>
 
@@ -275,7 +275,7 @@
 					aria-labelledby="heads-up-heading"
 				>
 					<div
-						class="font-display text-[80px] leading-none w-full whitespace-nowrap text-center"
+						class="font-display text-[80px] leading-none w-full whitespace-nowrap text-center select-none"
 					>
 						<span
 							class="block text-[#0a0a0a] h-2"
@@ -305,7 +305,9 @@
 						>
 							HEADS UP!
 						</span>
-						<h2 id="heads-up-heading" class="text-white h-16">HEADS UP!</h2>
+						<h2 id="heads-up-heading" class="text-white h-16 select-text">
+							HEADS UP!
+						</h2>
 					</div>
 					<div
 						class="text-white text-center font-sans text-[18px] font-bold leading-[1.6] w-full px-2"
@@ -340,7 +342,7 @@
 
 				<!-- 3D Transition Section -->
 				<div
-					class="-mt-5 h-39.75 flex items-end justify-center"
+					class="-mt-5 h-39.75 flex items-end justify-center pointer-events-none select-none"
 					aria-hidden="true"
 				>
 					<img
@@ -464,7 +466,10 @@
 					</div>
 				</section>
 
-				<div class="location-wave location-wave--top" aria-hidden="true"></div>
+				<div
+					class="location-wave location-wave--top pointer-events-none select-none"
+					aria-hidden="true"
+				></div>
 
 				<!-- LOCATION Section -->
 				<section
@@ -610,7 +615,7 @@
 				</section>
 
 				<div
-					class="location-wave location-wave--bottom"
+					class="location-wave location-wave--bottom pointer-events-none select-none"
 					aria-hidden="true"
 				></div>
 
@@ -632,7 +637,7 @@
 							<h3 class="font-display text-[32px] leading-none">
 								PLATINUM SPONSORS
 							</h3>
-							<ul class="flex flex-col gap-2 w-full list-none">
+							<ul class="flex flex-col gap-3 w-full list-none">
 								<li>
 									<a
 										href="https://corp.kaonavi.jp/"
@@ -643,7 +648,7 @@
 										<img
 											src="assets/sponsors/platinum/kaonavi.png"
 											alt="kaonavi"
-											class="w-full aspect-320/180 object-contain bg-white"
+											class="w-full aspect-320/180 object-contain bg-white border-2 border-[#0a0a0a]"
 										>
 										<span class="sr-only">（外部サイトを開く）</span>
 									</a>
@@ -658,7 +663,7 @@
 										<img
 											src="assets/sponsors/platinum/stmn.png"
 											alt="stmn"
-											class="w-full aspect-320/180 object-contain bg-white"
+											class="w-full aspect-320/180 object-contain bg-white border-2 border-[#0a0a0a]"
 										>
 										<span class="sr-only">（外部サイトを開く）</span>
 									</a>
@@ -682,7 +687,7 @@
 										<img
 											src="assets/sponsors/gold/leaner.jpg"
 											alt="Leaner"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4"
+											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
 										>
 										<span class="sr-only">（外部サイトを開く）</span>
 									</a>
@@ -697,7 +702,7 @@
 										<img
 											src="assets/sponsors/gold/prtimes.png"
 											alt="PR TIMES"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4"
+											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
 										>
 										<span class="sr-only">（外部サイトを開く）</span>
 									</a>
@@ -712,7 +717,7 @@
 										<img
 											src="assets/sponsors/gold/kokorozashi.png"
 											alt="kokorozashi"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4"
+											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
 										>
 										<span class="sr-only">（外部サイトを開く）</span>
 									</a>
@@ -727,7 +732,7 @@
 										<img
 											src="assets/sponsors/gold/chot_inc.png"
 											alt="chot inc."
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4"
+											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
 										>
 										<span class="sr-only">（外部サイトを開く）</span>
 									</a>
@@ -742,7 +747,7 @@
 										<img
 											src="assets/sponsors/gold/codecast.jpg"
 											alt="Codecast"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4"
+											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
 										>
 										<span class="sr-only">（外部サイトを開く）</span>
 									</a>
@@ -756,7 +761,7 @@
 								SILVER SPONSORS
 							</h3>
 							<ul class="flex flex-col gap-2 items-center w-full list-none">
-								<li class="w-1/2">
+								<li class="w-[70%]">
 									<a
 										href="https://www.reiwatravel.co.jp/"
 										target="_blank"
@@ -766,7 +771,7 @@
 										<img
 											src="assets/sponsors/silver/reiwa_travel.png"
 											alt="令和トラベル"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4"
+											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
 										>
 										<span class="sr-only">（外部サイトを開く）</span>
 									</a>
@@ -790,7 +795,7 @@
 										<img
 											src="assets/sponsors/bronze/local_tech.png"
 											alt="Local Tech"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4"
+											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
 										>
 										<span class="sr-only">（外部サイトを開く）</span>
 									</a>
@@ -805,7 +810,7 @@
 										<img
 											src="assets/sponsors/bronze/tskaigi.png"
 											alt="TSKaigi"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4"
+											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
 										>
 										<span class="sr-only">（外部サイトを開く）</span>
 									</a>
@@ -816,7 +821,10 @@
 				</section>
 
 				<!-- Decorative Stripe Banner -->
-				<div class="relative h-48 overflow-hidden" aria-hidden="true">
+				<div
+					class="relative h-48 overflow-hidden pointer-events-none select-none"
+					aria-hidden="true"
+				>
 					<!-- Band 1 (背面): -8deg, 下寄り -->
 					<div
 						class="absolute inset-0 flex items-center justify-center translate-y-8"
@@ -1021,7 +1029,7 @@
 
 				<!-- JOB BOARD Section -->
 				<section
-					class="py-16 px-4 text-center"
+					class="pt-0 pb-8 px-4 text-center"
 					aria-labelledby="job-board-heading"
 				>
 					<div class="max-w-lg mx-auto">
@@ -1032,11 +1040,11 @@
 							JOB BOARD
 						</h2>
 						<ul class="space-y-3 list-none">
-							<li class="rounded-lg overflow-hidden">
+							<li>
 								<img
 									src="./assets/job-board/reiwatravel.png"
 									alt="令和トラベル Mission: テクノロジーを駆使し、旅行の未来を創る。NEWT（ニュート）かしこい、おトク、旅行アプリ。エンジニア採用中"
-									class="w-full aspect-video object-cover"
+									class="w-full aspect-video object-cover border-2 border-[#0a0a0a]"
 									width="1920"
 									height="1080"
 									loading="lazy"
@@ -1051,7 +1059,7 @@
 				<section aria-labelledby="member-heading" class="overflow-x-hidden">
 					<!-- 上帯マーキー -->
 					<div
-						class="relative bg-[#0a0a0a] py-1 overflow-hidden"
+						class="relative bg-[#0a0a0a] py-1 overflow-hidden pointer-events-none select-none"
 						aria-hidden="true"
 					>
 						<div class="inline-flex w-max whitespace-nowrap animate-marquee">
@@ -1382,7 +1390,7 @@
 					<div class="grid grid-cols-3 border-l border-t border-[#0a0a0a]">
 						<!-- 装飾枠 1 -->
 						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden"
+							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
 							aria-hidden="true"
 						>
 							<!-- バンド1: -8deg, marquee -->
@@ -1477,7 +1485,7 @@
 						</a>
 						<!-- 装飾枠 2 -->
 						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden"
+							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
 							aria-hidden="true"
 						>
 							<!-- バンド1: -8deg, marquee -->
@@ -1567,7 +1575,7 @@
 					<div class="grid grid-cols-3 border-l border-t border-[#0a0a0a]">
 						<!-- 装飾枠 -->
 						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden"
+							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
 							aria-hidden="true"
 						>
 							<!-- バンド1: -8deg, marquee -->
@@ -1776,7 +1784,7 @@
 						</a>
 						<!-- 装飾枠 (row3-col3) -->
 						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden"
+							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
 							aria-hidden="true"
 						>
 							<!-- バンド1: -8deg, marquee -->
@@ -1871,7 +1879,7 @@
 						</a>
 						<!-- 装飾枠 (row4-col1) -->
 						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden"
+							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
 							aria-hidden="true"
 						>
 							<!-- バンド1: -8deg, marquee -->
@@ -2020,7 +2028,7 @@
 						</a>
 						<!-- 装飾枠 (row6-col1) -->
 						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden"
+							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
 							aria-hidden="true"
 						>
 							<!-- バンド1: -8deg, marquee -->
@@ -2115,7 +2123,7 @@
 						</a>
 						<!-- 装飾枠 2 -->
 						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden"
+							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
 							aria-hidden="true"
 						>
 							<!-- バンド1: -8deg, marquee -->
@@ -2193,7 +2201,7 @@
 
 					<!-- 下帯マーキー -->
 					<div
-						class="relative bg-[#0a0a0a] py-1 overflow-hidden"
+						class="relative bg-[#0a0a0a] py-1 overflow-hidden pointer-events-none select-none"
 						aria-hidden="true"
 					>
 						<div class="inline-flex w-max whitespace-nowrap animate-marquee">
@@ -2366,20 +2374,18 @@
 
 					<!-- Wave Separator + Mascot Background -->
 					<div
-						class="bg-[#fafafa] bg-[url('assets/bg-mascot-section.svg')] bg-size-[7px_14px] bg-repeat"
+						class="bg-[#fafafa] bg-[url('assets/bg-mascot-section.svg')] bg-size-[7px_14px] bg-repeat overflow-hidden pointer-events-none select-none"
 						aria-hidden="true"
 					>
 						<div class="footer-wave -scale-y-100"></div>
 						<div class="h-20"></div>
+						<div class="footer-wave"></div>
 					</div>
 				</section>
 			</main>
 
 			<!-- Footer -->
 			<footer>
-				<!-- Wave Separator -->
-				<div class="footer-wave" aria-hidden="true"></div>
-
 				<!-- Content -->
 				<div
 					class="bg-[#0a0a0a] flex flex-col gap-8 items-start pt-8 pb-4 px-6"
