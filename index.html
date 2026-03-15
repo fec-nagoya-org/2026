@@ -8,6 +8,13 @@
 			name="description"
 			content="フロントエンドカンファレンス名古屋 2026 - 2026年5月9日（土）ウインクあいちにて開催"
 		>
+		<link rel="canonical" href="https://fec-nagoya-org.github.io/2026/">
+		<meta name="robots" content="index, follow">
+		<meta
+			name="google-site-verification"
+			content="O9zgxHDs5bP3vmNIxfDTHgXRzdM1m3NK9hpngd8JUXg"
+		>
+		<meta name="theme-color" content="#0a0a0a">
 		<meta property="og:title" content="Frontend Conference Nagoya 2026">
 		<meta
 			property="og:description"
@@ -53,10 +60,67 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link
+			rel="preload"
+			as="style"
+			href="https://fonts.googleapis.com/css2?family=Modak&family=Noto+Sans:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Roboto+Condensed:ital,wght@1,900&display=swap"
+		>
+		<link
 			href="https://fonts.googleapis.com/css2?family=Modak&family=Noto+Sans:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Roboto+Condensed:ital,wght@1,900&display=swap"
 			rel="stylesheet"
 		>
 		<link rel="stylesheet" href="./style.css">
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Event",
+				"name": "Frontend Conference Nagoya 2026",
+				"description": "最新のフロントエンド技術と全国のエンジニアが名古屋に集結するテックカンファレンス",
+				"startDate": "2026-05-09T10:00:00+09:00",
+				"endDate": "2026-05-09T18:00:00+09:00",
+				"eventStatus": "https://schema.org/EventScheduled",
+				"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+				"location": {
+					"@type": "Place",
+					"name": "ウインクあいち（愛知県産業労働センター）",
+					"address": {
+						"@type": "PostalAddress",
+						"streetAddress": "名駅4丁目4-38",
+						"addressLocality": "名古屋市中村区",
+						"addressRegion": "愛知県",
+						"postalCode": "450-0002",
+						"addressCountry": "JP"
+					},
+					"geo": {
+						"@type": "GeoCoordinates",
+						"latitude": 35.17085,
+						"longitude": 136.88515
+					}
+				},
+				"image": "https://fec-nagoya-org.github.io/2026/assets/ogp.png",
+				"url": "https://fec-nagoya-org.github.io/2026/",
+				"organizer": {
+					"@type": "Organization",
+					"name": "フロントエンドカンファレンス名古屋実行委員会",
+					"url": "https://fec-nagoya-org.github.io/2026/"
+				},
+				"inLanguage": "ja",
+				"isAccessibleForFree": false,
+				"offers": {
+					"@type": "Offer",
+					"url": "https://fortee.jp/frontend-conf-nagoya-2026/ticket",
+					"availability": "https://schema.org/InStock"
+				}
+			}
+		</script>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "Frontend Conference Nagoya 2026",
+				"url": "https://fec-nagoya-org.github.io/2026/",
+				"inLanguage": "ja"
+			}
+		</script>
 	</head>
 	<body class="font-sans text-black bg-[#fafafa]">
 		<div
@@ -2484,6 +2548,6 @@
 		window.FEC_NAGOYA_GOOGLE_MAPS_API_KEY =
 			"AIzaSyBko06UEIfITnhEF1Y4YF7jmmzAvjKjQVI";
 		</script>
-		<script src="./src/location-map.js"></script>
+		<script src="./src/location-map.js" defer></script>
 	</body>
 </html>
