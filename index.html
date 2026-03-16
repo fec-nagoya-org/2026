@@ -124,11 +124,11 @@
 	</head>
 	<body class="font-sans text-black bg-[#fafafa]">
 		<div
-			class="relative mx-auto w-full max-w-[1280px] lg:flex lg:items-start lg:justify-center lg:gap-8"
+			class="relative mx-auto w-full max-w-[1280px] lg:px-4 xl:px-0 lg:flex lg:items-start lg:justify-center lg:gap-8"
 		>
 			<!-- PC Sidebar (visible only on lg+) -->
 			<aside
-				class="hidden lg:sticky lg:top-0 lg:flex lg:h-screen lg:min-w-0 lg:flex-1 lg:flex-col lg:items-start lg:justify-center lg:gap-10 lg:py-8"
+				class="hidden lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-[479.672px] lg:flex-none lg:flex-col lg:items-start lg:justify-center lg:gap-10 lg:py-8 xl:w-auto xl:min-w-0 xl:flex-1"
 				aria-label="チケット購入・イベント情報"
 			>
 				<!-- Title + Hashtag Group -->
@@ -146,7 +146,9 @@
 				</div>
 
 				<!-- Ticket Buttons: 横並び -->
-				<div class="flex gap-2 items-end w-full">
+				<div
+					class="flex w-full flex-col items-start gap-4 xl:flex-row xl:items-end xl:gap-2"
+				>
 					<!-- EVENT TICKET -->
 					<div class="flex flex-col gap-1 shrink-0">
 						<!-- Balloon -->
@@ -188,7 +190,7 @@
 					</div>
 
 					<!-- AFTER PARTY TICKET -->
-					<div class="flex flex-1 min-w-0 flex-col gap-1">
+					<div class="flex flex-col gap-1 shrink-0 xl:flex-1 xl:min-w-0">
 						<!-- Balloon -->
 						<div class="relative w-[292px] h-[33px]">
 							<img
@@ -207,7 +209,7 @@
 							href="https://fortee.jp/fec-nagoya-2026/ticket-shop/index/04a39d7f-5dbc-4c11-b5c7-90d192c07392"
 							target="_blank"
 							rel="noopener noreferrer"
-							class="flex w-full items-center justify-between bg-white bg-[url('assets/bg-mascot-section.svg')] bg-size-[7px_14px] bg-repeat border-2 border-[#0a0a0a] rounded-[74px] pl-8 pr-3 py-3 hover:opacity-80 transition-opacity"
+							class="flex items-center justify-between bg-white bg-[url('assets/bg-mascot-section.svg')] bg-size-[7px_14px] bg-repeat border-2 border-[#0a0a0a] rounded-[74px] pl-8 pr-3 py-3 hover:opacity-80 transition-opacity xl:w-full"
 						>
 							<div
 								class="flex flex-col leading-none pb-1 text-[#0a0a0a] whitespace-nowrap"
