@@ -124,2425 +124,2559 @@
 	</head>
 	<body class="font-sans text-black bg-[#fafafa]">
 		<div
-			class="relative mx-auto max-w-100.5 border-x-4 border-y-4 border-[#0a0a0a] bg-white bg-[url('assets/bg-mascot-section.svg')] bg-size-[24px_48px] bg-repeat overflow-hidden"
+			class="relative mx-auto w-full max-w-[1280px] lg:flex lg:items-start lg:justify-center lg:gap-8"
 		>
-			<!-- Hero Section -->
-			<header
-				class="hero-header relative bg-black text-white overflow-hidden h-218.5"
+			<!-- PC Sidebar (visible only on lg+) -->
+			<aside
+				class="hidden lg:sticky lg:top-0 lg:flex lg:h-screen lg:min-w-0 lg:flex-1 lg:flex-col lg:items-start lg:justify-center lg:gap-10 lg:py-8"
 			>
-				<!-- Background dot pattern -->
-				<div
-					class="absolute inset-0 pointer-events-none"
-					aria-hidden="true"
-				></div>
+				<!-- Title + Hashtag Group -->
+				<div class="flex flex-col gap-6">
+					<img
+						src="./assets/sidebar-title.svg"
+						alt="FRONTEND CONFERENCE"
+						class="w-[479.672px] h-[120.985px]"
+					>
+					<img
+						src="./assets/sidebar-hashtag.svg"
+						alt="#NAGOYA2026"
+						class="w-[358.799px] h-[34.42px]"
+					>
+				</div>
 
-				<!-- Top marquee band -->
-				<div
-					class="relative z-20 bg-[#0a0a0a] py-1 overflow-hidden border-gray-800 pointer-events-none select-none"
-					aria-hidden="true"
-				>
-					<div class="inline-flex w-max whitespace-nowrap animate-marquee">
-						<div class="flex items-center gap-2 shrink-0 pl-2">
-							<span
-								class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-								>FRONTEND CONFERENCE NAGOYA 2026</span
-							>
+				<!-- Ticket Buttons: 横並び -->
+				<div class="flex gap-2 items-end w-full">
+					<!-- EVENT TICKET -->
+					<div class="flex flex-col gap-1 shrink-0">
+						<!-- Balloon -->
+						<div class="relative w-[292px] h-[33px]">
 							<img
-								src="./assets/eye.svg"
+								src="./assets/sidebar-balloon-event.svg"
 								alt=""
-								class="w-7.75 h-8 shrink-0"
+								class="absolute -left-[4px] -top-[3px] max-w-none w-[300px] h-[39px]"
 								aria-hidden="true"
 							>
 							<span
-								class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-								>FRONTEND CONFERENCE NAGOYA 2026</span
-							>
-							<img
-								src="./assets/eye.svg"
-								alt=""
-								class="w-7.75 h-8 shrink-0"
-								aria-hidden="true"
+								class="absolute top-[7px] right-4 left-4 z-10 font-black text-[13px] leading-none text-[#0a0a0a] text-center whitespace-nowrap"
+								>セッション聴講・スポンサー観覧はこちら！</span
 							>
 						</div>
-						<div class="flex items-center gap-2 shrink-0 pl-2">
-							<span
-								class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-								>FRONTEND CONFERENCE NAGOYA 2026</span
+						<!-- Button -->
+						<a
+							href="https://fortee.jp/fec-nagoya-2026/ticket-shop/index/efcd9624-5127-49bb-a88b-e17b5231311b"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="flex gap-4 items-center bg-[#0a0a0a] border-2 border-[#0a0a0a] rounded-[74px] pl-8 pr-3 py-3 hover:opacity-80 transition-opacity"
+						>
+							<div
+								class="flex flex-col leading-none pb-1 text-[#fafafa] whitespace-nowrap"
 							>
+								<span class="font-display text-[36px]">EVENT TICKET</span>
+								<span class="font-black text-[18px] tracking-[0.36px]"
+									>本編チケットを買う</span
+								>
+							</div>
 							<img
-								src="./assets/eye.svg"
+								src="./assets/sidebar-arrow-dark.svg"
 								alt=""
-								class="w-7.75 h-8 shrink-0"
+								class="size-16 shrink-0 -rotate-90"
+								aria-hidden="true"
+							>
+							<span class="sr-only">（新しいタブで開きます）</span>
+						</a>
+					</div>
+
+					<!-- AFTER PARTY TICKET -->
+					<div class="flex flex-1 min-w-0 flex-col gap-1">
+						<!-- Balloon -->
+						<div class="relative w-[292px] h-[33px]">
+							<img
+								src="./assets/sidebar-balloon-party.svg"
+								alt=""
+								class="absolute -left-[4px] -top-[3px] max-w-none w-[300px] h-[39px]"
 								aria-hidden="true"
 							>
 							<span
-								class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-								>FRONTEND CONFERENCE NAGOYA 2026</span
-							>
-							<img
-								src="./assets/eye.svg"
-								alt=""
-								class="w-7.75 h-8 shrink-0"
-								aria-hidden="true"
+								class="absolute top-[7px] right-4 left-4 z-10 font-black text-[13px] leading-none text-[#fafafa] text-center whitespace-nowrap"
+								>本編チケット購入者限定！懇親会はこちら！</span
 							>
 						</div>
+						<!-- Button -->
+						<a
+							href="https://fortee.jp/fec-nagoya-2026/ticket-shop/index/04a39d7f-5dbc-4c11-b5c7-90d192c07392"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="flex w-full items-center justify-between bg-white bg-[url('assets/bg-mascot-section.svg')] bg-size-[7px_14px] bg-repeat border-2 border-[#0a0a0a] rounded-[74px] pl-8 pr-3 py-3 hover:opacity-80 transition-opacity"
+						>
+							<div
+								class="flex flex-col leading-none pb-1 text-[#0a0a0a] whitespace-nowrap"
+							>
+								<span class="font-display text-[36px]">AFTER PARTY TICKET</span>
+								<span class="font-black text-[18px] tracking-[0.36px]"
+									>懇親会チケットを買う</span
+								>
+							</div>
+							<img
+								src="./assets/sidebar-arrow-light.svg"
+								alt=""
+								class="size-16 shrink-0 -rotate-90"
+								aria-hidden="true"
+							>
+							<span class="sr-only">（新しいタブで開きます）</span>
+						</a>
 					</div>
 				</div>
+			</aside>
 
-				<!-- White rounded background shape with mascot pattern + 3D objects -->
-				<div
-					class="absolute left-0 top-10 w-100.5 hero-bg-shape pointer-events-none select-none"
-					style="height: 834px"
-					aria-hidden="true"
+			<div
+				class="relative mx-auto max-w-100.5 border-x-4 border-y-4 border-[#0a0a0a] bg-white bg-[url('assets/bg-mascot-section.svg')] bg-size-[24px_48px] bg-repeat overflow-hidden lg:mx-0 lg:w-[402px] lg:shrink-0"
+			>
+				<!-- Hero Section -->
+				<header
+					class="hero-header relative bg-black text-white overflow-hidden h-218.5"
 				>
-					<!-- 3D floating objects (clipped by hero-bg-shape mask) -->
-					<img
-						src="./assets/3d/particle-5.png"
-						alt=""
-						class="absolute blur-[3px] w-29 h-28.75 top-19 left-65.75 animate-fade-float-slow"
-						style="animation-delay: 0.2s, 1.2s"
-					>
-					<img
-						src="./assets/3d/particle-3.png"
-						alt=""
-						class="absolute blur-[2px] w-10.25 h-11.5 top-54 left-86.75 animate-fade-float-medium"
-						style="animation-delay: 0.6s, 1.6s"
-					>
-					<img
-						src="./assets/3d/particle-6.png"
-						alt=""
-						class="absolute blur-[3px] w-28.5 h-28 top-59.75 -left-6.25 animate-fade-float-slow"
-						style="animation-delay: 0.4s, 1.4s"
-					>
-					<img
-						src="./assets/3d/particle-2.png"
-						alt=""
-						class="absolute blur-[3px] w-24 h-27.75 top-97.5 left-83.75 rotate-[-42.47deg] animate-fade-float-slow"
-						style="animation-delay: 0.8s, 1.8s"
-					>
-					<img
-						src="./assets/3d/particle-2.png"
-						alt=""
-						class="absolute blur-[3px] w-12 h-14.75 top-123 -left-1.75 animate-fade-float-slow"
-						style="animation-delay: 0.3s, 1.3s"
-					>
-					<img
-						src="./assets/3d/particle-4.png"
-						alt=""
-						class="absolute blur-[2px] w-59.5 h-53 top-151.75 left-1.25 animate-fade-float-medium"
-						style="animation-delay: 0.7s, 1.7s"
-					>
-					<img
-						src="./assets/3d/particle-1.png"
-						alt=""
-						class="absolute blur-[3px] w-20.25 h-24 top-155 left-80.25 animate-fade-float-slow"
-						style="animation-delay: 0.5s, 1.5s"
-					>
-					<!-- Main 3D mascot -->
-					<img
-						src="./assets/3d/mascot-3d.png"
-						alt=""
-						class="absolute w-76.25 h-90 top-67.5 left-8.75 rotate-[9.19deg] animate-fade-float"
-						style="animation-delay: 0.1s, 1.1s"
-					>
-				</div>
-
-				<!-- Title with black bg blocks -->
-				<h1 class="absolute z-10 left-0 top-10 flex flex-col items-start">
-					<span class="sr-only">FRONTEND CONFERENCE NAGOYA</span>
-					<span class="bg-[#0a0a0a] px-4 pt-3 pb-1 inline-flex">
-						<img src="./assets/hero-title-line1.svg" alt="" class="h-9 w-auto">
-					</span>
-					<span class="bg-[#0a0a0a] px-4 py-3 inline-flex">
-						<img src="./assets/hero-title-line2.svg" alt="" class="h-9 w-auto">
-					</span>
-					<span class="bg-[#0a0a0a] px-4 pt-1 pb-3 inline-flex">
-						<img src="./assets/hero-title-line3.svg" alt="" class="h-9 w-auto">
-					</span>
-				</h1>
-
-				<!-- Venue / Date info -->
-				<img
-					src="./assets/hero-info.svg"
-					alt="場所: ウインクあいち（WINK AICHI）、日程: 2026年5月9日 土曜日"
-					class="absolute z-10 left-3 top-57 w-84 h-auto"
-				>
-
-				<!-- Starburst decorations -->
-				<!-- Top-right small (~23px) -->
-				<img
-					src="./assets/starburst.svg"
-					alt=""
-					width="120"
-					height="120"
-					class="absolute z-10 w-5.75 h-auto animate-spin-slow top-25.5 right-3.75 pointer-events-none select-none"
-					aria-hidden="true"
-				>
-				<!-- Top-right large (~52px) -->
-				<img
-					src="./assets/starburst.svg"
-					alt=""
-					width="120"
-					height="120"
-					class="absolute z-10 w-13 h-auto animate-spin-slow top-32.75 -right-4.25 pointer-events-none select-none"
-					aria-hidden="true"
-				>
-				<!-- Bottom-left large (~100px) -->
-				<img
-					src="./assets/starburst.svg"
-					alt=""
-					width="120"
-					height="120"
-					class="absolute z-10 w-25 h-auto animate-spin-slow top-182.25 left-10.75 pointer-events-none select-none"
-					aria-hidden="true"
-				>
-				<!-- Bottom-left medium (~50px) -->
-				<img
-					src="./assets/starburst.svg"
-					alt=""
-					width="120"
-					height="120"
-					class="absolute z-10 w-12.5 h-auto animate-spin-slow top-170.75 -left-1.5 pointer-events-none select-none"
-					aria-hidden="true"
-				>
-
-				<!-- Scroll arrow -->
-				<a
-					href="#heads-up"
-					class="absolute z-10 left-1/2 -translate-x-1/2 top-194.5"
-					aria-label="次のセクションへスクロール"
-				>
+					<!-- Background dot pattern -->
 					<div
-						class="size-18 rounded-full border-4 border-[#FAFAFA] bg-[#0A0A0A] flex flex-col items-center justify-center overflow-hidden"
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="23"
-							height="27"
-							viewBox="0 0 23 27"
-							fill="none"
-						>
-							<path
-								d="M12.5459 1.5C12.5459 0.671573 11.8743 0 11.0459 0C10.2175 0 9.5459 0.671573 9.5459 1.5H11.0459H12.5459ZM9.98524 26.5607C10.571 27.1464 11.5208 27.1464 12.1066 26.5607L21.6525 17.0147C22.2383 16.4289 22.2383 15.4792 21.6525 14.8934C21.0667 14.3076 20.117 14.3076 19.5312 14.8934L11.0459 23.3787L2.56062 14.8934C1.97483 14.3076 1.02508 14.3076 0.439297 14.8934C-0.14649 15.4792 -0.14649 16.4289 0.439297 17.0147L9.98524 26.5607ZM11.0459 1.5H9.5459L9.5459 25.5H11.0459H12.5459L12.5459 1.5H11.0459Z"
-								fill="#FAFAFA"
-							/>
-						</svg>
-					</div>
-				</a>
-			</header>
+						class="absolute inset-0 pointer-events-none"
+						aria-hidden="true"
+					></div>
 
-			<main>
-				<!-- HEADS UP! Section -->
-				<section
-					id="heads-up"
-					class="relative z-10 bg-black flex flex-col items-center gap-6 pb-30 overflow-hidden rounded-bl-[9999px] rounded-br-[9999px]"
-					aria-labelledby="heads-up-heading"
-				>
+					<!-- Top marquee band -->
 					<div
-						class="font-display text-[80px] leading-none w-full whitespace-nowrap text-center select-none"
+						class="relative z-20 bg-[#0a0a0a] py-1 overflow-hidden border-gray-800 pointer-events-none select-none"
+						aria-hidden="true"
 					>
-						<span
-							class="block text-[#0a0a0a] h-2"
-							style="-webkit-text-stroke: 1px #fafafa"
-							aria-hidden="true"
-						>
-							HEADS UP!
-						</span>
-						<span
-							class="block text-[#0a0a0a] h-2"
-							style="-webkit-text-stroke: 1px #fafafa"
-							aria-hidden="true"
-						>
-							HEADS UP!
-						</span>
-						<span
-							class="block text-[#0a0a0a] h-2"
-							style="-webkit-text-stroke: 1px #fafafa"
-							aria-hidden="true"
-						>
-							HEADS UP!
-						</span>
-						<span
-							class="block text-[#0a0a0a] h-2"
-							style="-webkit-text-stroke: 1px #fafafa"
-							aria-hidden="true"
-						>
-							HEADS UP!
-						</span>
-						<h2 id="heads-up-heading" class="text-white h-16 select-text">
-							HEADS UP!
-						</h2>
-					</div>
-					<div
-						class="text-white text-center font-sans text-[18px] font-bold leading-[1.6] w-full px-2"
-					>
-						<p>
-							フロントエンドカンファレンスの波が
-							<br>
-							ついに名古屋へ！
-						</p>
-					</div>
-					<div
-						class="text-white text-center font-sans text-[18px] font-bold leading-[1.6] w-full px-2"
-					>
-						<p>
-							最新のフロントエンド事情と
-							<br>
-							全国のフロントエンドエンジニアが
-							<br>
-							日本の中心に集結！
-						</p>
-					</div>
-					<div
-						class="text-white text-center font-sans text-[18px] font-bold leading-[1.6] w-full px-2"
-					>
-						<p>
-							特別な一日をお見逃しなく！
-							<br>
-							『名古屋でもフロカンやるぞー！』
-						</p>
-					</div>
-				</section>
-
-				<!-- 3D Transition Section -->
-				<div
-					class="-mt-5 h-39.75 flex items-end justify-center pointer-events-none select-none"
-					aria-hidden="true"
-				>
-					<img
-						src="./assets/3d/transition-shape.png"
-						alt=""
-						class="w-109.5 h-87 max-w-none shrink-0"
-					>
-				</div>
-
-				<!-- TICKETS Section -->
-				<section
-					class="pb-8 px-6 text-center"
-					aria-labelledby="tickets-heading"
-				>
-					<div class="flex flex-col gap-3 items-center mx-auto max-w-sm">
-						<h2
-							id="tickets-heading"
-							class="font-display text-[64px] leading-none text-trim"
-						>
-							TICKETS
-						</h2>
-						<p class="font-black text-base leading-none">
-							チケットはForteeで販売中！
-						</p>
-						<div class="flex flex-col gap-2 items-center">
-							<!-- Primary Button with balloon label & mascot -->
-							<div class="relative mt-1.75">
-								<!-- Balloon label -->
-								<div class="absolute -top-1.75 left-1.75 w-55 h-6">
-									<img
-										src="./assets/tickets-balloon.svg"
-										alt=""
-										class="absolute inset-0 w-full h-full"
-									>
-									<span
-										class="relative z-10 flex items-center justify-center w-full h-full font-black text-[10px]"
-										>セッション聴講・スポンサー観覧はこちら！</span
-									>
-								</div>
-								<!-- Mascot icon -->
+						<div class="inline-flex w-max whitespace-nowrap animate-marquee">
+							<div class="flex items-center gap-2 shrink-0 pl-2">
+								<span
+									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+									>FRONTEND CONFERENCE NAGOYA 2026</span
+								>
 								<img
-									src="./assets/tickets-mascot.svg"
+									src="./assets/eye.svg"
 									alt=""
-									class="absolute -top-1 right-3 w-12 h-13.75 z-10 pointer-events-none"
+									class="w-7.75 h-8 shrink-0"
 									aria-hidden="true"
 								>
+								<span
+									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+									>FRONTEND CONFERENCE NAGOYA 2026</span
+								>
+								<img
+									src="./assets/eye.svg"
+									alt=""
+									class="w-7.75 h-8 shrink-0"
+									aria-hidden="true"
+								>
+							</div>
+							<div class="flex items-center gap-2 shrink-0 pl-2">
+								<span
+									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+									>FRONTEND CONFERENCE NAGOYA 2026</span
+								>
+								<img
+									src="./assets/eye.svg"
+									alt=""
+									class="w-7.75 h-8 shrink-0"
+									aria-hidden="true"
+								>
+								<span
+									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+									>FRONTEND CONFERENCE NAGOYA 2026</span
+								>
+								<img
+									src="./assets/eye.svg"
+									alt=""
+									class="w-7.75 h-8 shrink-0"
+									aria-hidden="true"
+								>
+							</div>
+						</div>
+					</div>
+
+					<!-- White rounded background shape with mascot pattern + 3D objects -->
+					<div
+						class="absolute left-0 top-10 w-100.5 hero-bg-shape pointer-events-none select-none"
+						style="height: 834px"
+						aria-hidden="true"
+					>
+						<!-- 3D floating objects (clipped by hero-bg-shape mask) -->
+						<img
+							src="./assets/3d/particle-5.png"
+							alt=""
+							class="absolute blur-[3px] w-29 h-28.75 top-19 left-65.75 animate-fade-float-slow"
+							style="animation-delay: 0.2s, 1.2s"
+						>
+						<img
+							src="./assets/3d/particle-3.png"
+							alt=""
+							class="absolute blur-[2px] w-10.25 h-11.5 top-54 left-86.75 animate-fade-float-medium"
+							style="animation-delay: 0.6s, 1.6s"
+						>
+						<img
+							src="./assets/3d/particle-6.png"
+							alt=""
+							class="absolute blur-[3px] w-28.5 h-28 top-59.75 -left-6.25 animate-fade-float-slow"
+							style="animation-delay: 0.4s, 1.4s"
+						>
+						<img
+							src="./assets/3d/particle-2.png"
+							alt=""
+							class="absolute blur-[3px] w-24 h-27.75 top-97.5 left-83.75 rotate-[-42.47deg] animate-fade-float-slow"
+							style="animation-delay: 0.8s, 1.8s"
+						>
+						<img
+							src="./assets/3d/particle-2.png"
+							alt=""
+							class="absolute blur-[3px] w-12 h-14.75 top-123 -left-1.75 animate-fade-float-slow"
+							style="animation-delay: 0.3s, 1.3s"
+						>
+						<img
+							src="./assets/3d/particle-4.png"
+							alt=""
+							class="absolute blur-[2px] w-59.5 h-53 top-151.75 left-1.25 animate-fade-float-medium"
+							style="animation-delay: 0.7s, 1.7s"
+						>
+						<img
+							src="./assets/3d/particle-1.png"
+							alt=""
+							class="absolute blur-[3px] w-20.25 h-24 top-155 left-80.25 animate-fade-float-slow"
+							style="animation-delay: 0.5s, 1.5s"
+						>
+						<!-- Main 3D mascot -->
+						<img
+							src="./assets/3d/mascot-3d.png"
+							alt=""
+							class="absolute w-76.25 h-90 top-67.5 left-8.75 rotate-[9.19deg] animate-fade-float"
+							style="animation-delay: 0.1s, 1.1s"
+						>
+					</div>
+
+					<!-- Title with black bg blocks -->
+					<h1 class="absolute z-10 left-0 top-10 flex flex-col items-start">
+						<span class="sr-only">FRONTEND CONFERENCE NAGOYA</span>
+						<span class="bg-[#0a0a0a] px-4 pt-3 pb-1 inline-flex">
+							<img
+								src="./assets/hero-title-line1.svg"
+								alt=""
+								class="h-9 w-auto"
+							>
+						</span>
+						<span class="bg-[#0a0a0a] px-4 py-3 inline-flex">
+							<img
+								src="./assets/hero-title-line2.svg"
+								alt=""
+								class="h-9 w-auto"
+							>
+						</span>
+						<span class="bg-[#0a0a0a] px-4 pt-1 pb-3 inline-flex">
+							<img
+								src="./assets/hero-title-line3.svg"
+								alt=""
+								class="h-9 w-auto"
+							>
+						</span>
+					</h1>
+
+					<!-- Venue / Date info -->
+					<img
+						src="./assets/hero-info.svg"
+						alt="場所: ウインクあいち（WINK AICHI）、日程: 2026年5月9日 土曜日"
+						class="absolute z-10 left-3 top-57 w-84 h-auto"
+					>
+
+					<!-- Starburst decorations -->
+					<!-- Top-right small (~23px) -->
+					<img
+						src="./assets/starburst.svg"
+						alt=""
+						width="120"
+						height="120"
+						class="absolute z-10 w-5.75 h-auto animate-spin-slow top-25.5 right-3.75 pointer-events-none select-none"
+						aria-hidden="true"
+					>
+					<!-- Top-right large (~52px) -->
+					<img
+						src="./assets/starburst.svg"
+						alt=""
+						width="120"
+						height="120"
+						class="absolute z-10 w-13 h-auto animate-spin-slow top-32.75 -right-4.25 pointer-events-none select-none"
+						aria-hidden="true"
+					>
+					<!-- Bottom-left large (~100px) -->
+					<img
+						src="./assets/starburst.svg"
+						alt=""
+						width="120"
+						height="120"
+						class="absolute z-10 w-25 h-auto animate-spin-slow top-182.25 left-10.75 pointer-events-none select-none"
+						aria-hidden="true"
+					>
+					<!-- Bottom-left medium (~50px) -->
+					<img
+						src="./assets/starburst.svg"
+						alt=""
+						width="120"
+						height="120"
+						class="absolute z-10 w-12.5 h-auto animate-spin-slow top-170.75 -left-1.5 pointer-events-none select-none"
+						aria-hidden="true"
+					>
+
+					<!-- Scroll arrow -->
+					<a
+						href="#heads-up"
+						class="absolute z-10 left-1/2 -translate-x-1/2 top-194.5"
+						aria-label="次のセクションへスクロール"
+					>
+						<div
+							class="size-18 rounded-full border-4 border-[#FAFAFA] bg-[#0A0A0A] flex flex-col items-center justify-center overflow-hidden"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="23"
+								height="27"
+								viewBox="0 0 23 27"
+								fill="none"
+							>
+								<path
+									d="M12.5459 1.5C12.5459 0.671573 11.8743 0 11.0459 0C10.2175 0 9.5459 0.671573 9.5459 1.5H11.0459H12.5459ZM9.98524 26.5607C10.571 27.1464 11.5208 27.1464 12.1066 26.5607L21.6525 17.0147C22.2383 16.4289 22.2383 15.4792 21.6525 14.8934C21.0667 14.3076 20.117 14.3076 19.5312 14.8934L11.0459 23.3787L2.56062 14.8934C1.97483 14.3076 1.02508 14.3076 0.439297 14.8934C-0.14649 15.4792 -0.14649 16.4289 0.439297 17.0147L9.98524 26.5607ZM11.0459 1.5H9.5459L9.5459 25.5H11.0459H12.5459L12.5459 1.5H11.0459Z"
+									fill="#FAFAFA"
+								/>
+							</svg>
+						</div>
+					</a>
+				</header>
+
+				<main>
+					<!-- HEADS UP! Section -->
+					<section
+						id="heads-up"
+						class="relative z-10 bg-black flex flex-col items-center gap-6 pb-30 overflow-hidden rounded-bl-[9999px] rounded-br-[9999px]"
+						aria-labelledby="heads-up-heading"
+					>
+						<div
+							class="font-display text-[80px] leading-none w-full whitespace-nowrap text-center select-none"
+						>
+							<span
+								class="block text-[#0a0a0a] h-2"
+								style="-webkit-text-stroke: 1px #fafafa"
+								aria-hidden="true"
+							>
+								HEADS UP!
+							</span>
+							<span
+								class="block text-[#0a0a0a] h-2"
+								style="-webkit-text-stroke: 1px #fafafa"
+								aria-hidden="true"
+							>
+								HEADS UP!
+							</span>
+							<span
+								class="block text-[#0a0a0a] h-2"
+								style="-webkit-text-stroke: 1px #fafafa"
+								aria-hidden="true"
+							>
+								HEADS UP!
+							</span>
+							<span
+								class="block text-[#0a0a0a] h-2"
+								style="-webkit-text-stroke: 1px #fafafa"
+								aria-hidden="true"
+							>
+								HEADS UP!
+							</span>
+							<h2 id="heads-up-heading" class="text-white h-16 select-text">
+								HEADS UP!
+							</h2>
+						</div>
+						<div
+							class="text-white text-center font-sans text-[18px] font-bold leading-[1.6] w-full px-2"
+						>
+							<p>
+								フロントエンドカンファレンスの波が
+								<br>
+								ついに名古屋へ！
+							</p>
+						</div>
+						<div
+							class="text-white text-center font-sans text-[18px] font-bold leading-[1.6] w-full px-2"
+						>
+							<p>
+								最新のフロントエンド事情と
+								<br>
+								全国のフロントエンドエンジニアが
+								<br>
+								日本の中心に集結！
+							</p>
+						</div>
+						<div
+							class="text-white text-center font-sans text-[18px] font-bold leading-[1.6] w-full px-2"
+						>
+							<p>
+								特別な一日をお見逃しなく！
+								<br>
+								『名古屋でもフロカンやるぞー！』
+							</p>
+						</div>
+					</section>
+
+					<!-- 3D Transition Section -->
+					<div
+						class="-mt-5 h-39.75 flex items-end justify-center pointer-events-none select-none"
+						aria-hidden="true"
+					>
+						<img
+							src="./assets/3d/transition-shape.png"
+							alt=""
+							class="w-109.5 h-87 max-w-none shrink-0"
+						>
+					</div>
+
+					<!-- TICKETS Section -->
+					<section
+						class="pb-8 px-6 text-center"
+						aria-labelledby="tickets-heading"
+					>
+						<div class="flex flex-col gap-3 items-center mx-auto max-w-sm">
+							<h2
+								id="tickets-heading"
+								class="font-display text-[64px] leading-none text-trim"
+							>
+								TICKETS
+							</h2>
+							<p class="font-black text-base leading-none">
+								チケットはForteeで販売中！
+							</p>
+							<div class="flex flex-col gap-2 items-center">
+								<!-- Primary Button with balloon label & mascot -->
+								<div class="relative mt-1.75">
+									<!-- Balloon label -->
+									<div class="absolute -top-1.75 left-1.75 w-55 h-6">
+										<img
+											src="./assets/tickets-balloon.svg"
+											alt=""
+											class="absolute inset-0 w-full h-full"
+										>
+										<span
+											class="relative z-10 flex items-center justify-center w-full h-full font-black text-[10px]"
+											>セッション聴講・スポンサー観覧はこちら！</span
+										>
+									</div>
+									<!-- Mascot icon -->
+									<img
+										src="./assets/tickets-mascot.svg"
+										alt=""
+										class="absolute -top-1 right-3 w-12 h-13.75 z-10 pointer-events-none"
+										aria-hidden="true"
+									>
+									<a
+										href="https://fortee.jp/fec-nagoya-2026/ticket-shop/index/efcd9624-5127-49bb-a88b-e17b5231311b"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="flex items-center justify-center bg-[#0a0a0a] text-[#fafafa] font-black text-lg leading-none text-trim h-10 px-4 rounded w-72 text-center mt-6 hover:opacity-80 transition-opacity"
+										>本編チケットを購入<span class="sr-only"
+											>（新しいタブで開きます）</span
+										></a
+									>
+								</div>
 								<a
-									href="https://fortee.jp/fec-nagoya-2026/ticket-shop/index/efcd9624-5127-49bb-a88b-e17b5231311b"
+									href="https://fortee.jp/fec-nagoya-2026/ticket-shop/index/04a39d7f-5dbc-4c11-b5c7-90d192c07392"
 									target="_blank"
 									rel="noopener noreferrer"
-									class="flex items-center justify-center bg-[#0a0a0a] text-[#fafafa] font-black text-lg leading-none text-trim h-10 px-4 rounded w-72 text-center mt-6 hover:opacity-80 transition-opacity"
-									>本編チケットを購入<span class="sr-only"
+									class="flex items-center justify-center bg-white bg-[url('assets/bg-mascot-section.svg')] bg-size-[7px_14px] bg-repeat border-2 border-[#0a0a0a] text-[#0a0a0a] font-black text-lg leading-none text-trim h-10 px-4 rounded w-72 text-center hover:opacity-80 transition-opacity"
+									>懇親会チケットを購入<span class="sr-only"
 										>（新しいタブで開きます）</span
 									></a
 								>
+								<p class="text-[10px]">※外部サイトを開きます</p>
 							</div>
-							<a
-								href="https://fortee.jp/fec-nagoya-2026/ticket-shop/index/04a39d7f-5dbc-4c11-b5c7-90d192c07392"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="flex items-center justify-center bg-white bg-[url('assets/bg-mascot-section.svg')] bg-size-[7px_14px] bg-repeat border-2 border-[#0a0a0a] text-[#0a0a0a] font-black text-lg leading-none text-trim h-10 px-4 rounded w-72 text-center hover:opacity-80 transition-opacity"
-								>懇親会チケットを購入<span class="sr-only"
-									>（新しいタブで開きます）</span
-								></a
+						</div>
+					</section>
+
+					<!-- LINKS Section -->
+					<section
+						class="pt-8 pb-12 px-6 text-center"
+						aria-labelledby="links-heading"
+					>
+						<div class="flex flex-col gap-3 items-center mx-auto max-w-sm">
+							<h2
+								id="links-heading"
+								class="font-display text-[64px] leading-none text-trim"
 							>
-							<p class="text-[10px]">※外部サイトを開きます</p>
+								LINKS
+							</h2>
+							<p class="font-black text-base leading-relaxed">
+								各種SNSで情報発信中！
+							</p>
+							<div class="flex flex-col gap-2 items-center">
+								<a
+									href="https://x.com/fec_nagoya"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="flex items-center justify-center gap-4 bg-[#0a0a0a] text-[#fafafa] font-bold text-base leading-none text-trim h-10 px-8 rounded w-72 hover:opacity-80 transition-opacity"
+								>
+									<img
+										src="./assets/icon-x.svg"
+										alt=""
+										class="w-5 h-5"
+										aria-hidden="true"
+									>
+									公式Xをひらく<span class="sr-only"
+										>（新しいタブで開きます）</span
+									>
+								</a>
+								<a
+									href="https://note.com/fec_nagoya"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="flex items-center justify-center gap-4 bg-[#fafafa] border-2 border-[#0a0a0a] text-[#0a0a0a] font-black text-base leading-none text-trim h-10 px-8 rounded w-72 hover:opacity-80 transition-opacity"
+								>
+									<img
+										src="./assets/icon-note.svg"
+										alt=""
+										class="w-5 h-5"
+										aria-hidden="true"
+									>
+									公式noteをひらく<span class="sr-only"
+										>（新しいタブで開きます）</span
+									>
+								</a>
+								<p class="text-[10px]">※外部サイトを開きます</p>
+							</div>
+						</div>
+					</section>
+
+					<div
+						class="location-wave location-wave--top pointer-events-none select-none"
+						aria-hidden="true"
+					></div>
+
+					<!-- LOCATION Section -->
+					<section
+						class="location-shell relative overflow-hidden px-8 pt-6 pb-12 text-white"
+						aria-labelledby="location-heading"
+					>
+						<div
+							class="relative z-10 mx-auto flex max-w-lg flex-col items-center gap-10"
+						>
+							<div
+								class="flex w-[259.86px] max-w-full flex-col items-center pb-2 text-center"
+							>
+								<h2 id="location-heading" class="sr-only">LOCATION</h2>
+								<div
+									class="relative mb-[-8px] h-[38.685px] w-[151.377px] shrink-0"
+									aria-hidden="true"
+								>
+									<img
+										src="./assets/location-header-title.svg"
+										alt=""
+										class="absolute block size-full max-w-none"
+									>
+								</div>
+								<div
+									class="relative mb-2 h-[33.831px] w-[21.528px] shrink-0"
+									aria-hidden="true"
+								>
+									<img
+										src="./assets/location-header-pin.svg"
+										alt=""
+										class="absolute block size-full max-w-none"
+									>
+								</div>
+								<div
+									class="relative h-9 w-[259.86px] max-w-full shrink-0"
+									aria-hidden="true"
+								>
+									<img
+										src="./assets/location-header-curve.svg"
+										alt=""
+										class="absolute block size-full max-w-none"
+									>
+								</div>
+							</div>
+
+							<div class="flex w-full flex-col gap-6">
+								<figure class="location-route-section mx-auto">
+									<div
+										class="location-route-header location-route-header--train"
+									>
+										<span
+											aria-hidden="true"
+											class="location-route-header-line"
+										></span>
+										<h3 class="location-route-header-title">
+											電車でお越しの方
+										</h3>
+										<span
+											aria-hidden="true"
+											class="location-route-header-line"
+										></span>
+									</div>
+									<img
+										src="./assets/location-train-section.svg"
+										alt=""
+										aria-hidden="true"
+										class="location-route-content location-route-content--train"
+									>
+									<figcaption>
+										<ul class="location-route-description">
+											<li>JR名古屋駅桜通口: ミッドランドスクエア方面徒歩5分</li>
+											<li>JR新幹線口: 徒歩9分</li>
+										</ul>
+									</figcaption>
+								</figure>
+
+								<figure class="location-route-section mx-auto">
+									<div
+										class="location-route-header location-route-header--flight"
+									>
+										<span
+											aria-hidden="true"
+											class="location-route-header-line"
+										></span>
+										<h3 class="location-route-header-title">
+											飛行機でお越しの方
+										</h3>
+										<span
+											aria-hidden="true"
+											class="location-route-header-line"
+										></span>
+									</div>
+									<img
+										src="./assets/location-flight-section.svg"
+										alt=""
+										aria-hidden="true"
+										class="location-route-content location-route-content--flight"
+									>
+									<figcaption>
+										<ul class="location-route-description">
+											<li>中部国際空港から名古屋駅: 名鉄空港線30分</li>
+											<li>名古屋駅からウインクあいち: 徒歩9分</li>
+										</ul>
+									</figcaption>
+								</figure>
+							</div>
+
+							<div class="w-full">
+								<div class="location-map-frame">
+									<div
+										id="location-map"
+										class="block h-72 w-full"
+										aria-label="名古屋駅からウインクあいちまでの徒歩経路地図"
+										hidden
+									></div>
+									<iframe
+										id="location-map-fallback"
+										title="ウインクあいちへの地図"
+										src="https://www.google.com/maps?q=%E3%82%A6%E3%82%A4%E3%83%B3%E3%82%AF%E3%81%82%E3%81%84%E3%81%A1%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E6%9D%91%E5%8C%BA%E5%90%8D%E9%A7%854%E4%B8%81%E7%9B%AE4-38&z=16&output=embed"
+										class="block h-72 w-full"
+										loading="lazy"
+										referrerpolicy="no-referrer-when-downgrade"
+									></iframe>
+								</div>
+							</div>
+							<div class="location-route-link-group">
+								<a
+									href="https://www.google.com/maps/dir/?api=1&destination=%E3%82%A6%E3%82%A4%E3%83%B3%E3%82%AF%E3%81%82%E3%81%84%E3%81%A1%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E6%9D%91%E5%8C%BA%E5%90%8D%E9%A7%854%E4%B8%81%E7%9B%AE4-38"
+									target="_blank"
+									rel="noopener noreferrer"
+									class="location-route-link"
+								>
+									<span class="location-route-link-label"
+										>会場までのルートをみる</span
+									>
+									<span class="location-route-link-icon" aria-hidden="true">
+										<svg class="size-4" viewBox="0 0 24 24" fill="currentColor">
+											<path
+												d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
+											/>
+										</svg>
+									</span>
+								</a>
+								<p class="location-route-link-note">※Google Mapを開きます</p>
+							</div>
+						</div>
+					</section>
+
+					<div
+						class="location-wave location-wave--bottom pointer-events-none select-none"
+						aria-hidden="true"
+					></div>
+
+					<!-- SPONSORS Section -->
+					<section
+						class="pt-12 pb-2 px-4 text-center"
+						aria-labelledby="sponsors-heading"
+					>
+						<div class="flex flex-col gap-4 items-center max-w-92.5 mx-auto">
+							<h2
+								id="sponsors-heading"
+								class="font-display text-[64px] leading-none"
+							>
+								SPONSORS
+							</h2>
+
+							<!-- Platinum Sponsors -->
+							<div class="flex flex-col gap-2 items-center w-full">
+								<h3 class="font-display text-[32px] leading-none">
+									PLATINUM SPONSORS
+								</h3>
+								<ul class="flex flex-col gap-3 w-full list-none">
+									<li>
+										<a
+											href="https://corp.kaonavi.jp/"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="block"
+										>
+											<img
+												src="assets/sponsors/platinum/kaonavi.png"
+												alt="kaonavi"
+												class="w-full aspect-320/180 object-contain bg-white border-2 border-[#0a0a0a]"
+											>
+											<span class="sr-only">（外部サイトを開く）</span>
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://stmn.co.jp/"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="block"
+										>
+											<img
+												src="assets/sponsors/platinum/stmn.png"
+												alt="stmn"
+												class="w-full aspect-320/180 object-contain bg-white border-2 border-[#0a0a0a]"
+											>
+											<span class="sr-only">（外部サイトを開く）</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<!-- Gold Sponsors -->
+							<div class="flex flex-col gap-2 items-center w-full">
+								<h3 class="font-display text-[32px] leading-none">
+									GOLD SPONSORS
+								</h3>
+								<ul class="flex flex-col gap-2 w-full list-none">
+									<li>
+										<a
+											href="https://leaner.co.jp/"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="block"
+										>
+											<img
+												src="assets/sponsors/gold/leaner.jpg"
+												alt="Leaner"
+												class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
+											>
+											<span class="sr-only">（外部サイトを開く）</span>
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://developers.prtimes.jp/"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="block"
+										>
+											<img
+												src="assets/sponsors/gold/prtimes.png"
+												alt="PR TIMES"
+												class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
+											>
+											<span class="sr-only">（外部サイトを開く）</span>
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://kokorozashi-japan.co.jp/"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="block"
+										>
+											<img
+												src="assets/sponsors/gold/kokorozashi.png"
+												alt="kokorozashi"
+												class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
+											>
+											<span class="sr-only">（外部サイトを開く）</span>
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://chot-inc.com/"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="block"
+										>
+											<img
+												src="assets/sponsors/gold/chot_inc.png"
+												alt="chot inc."
+												class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
+											>
+											<span class="sr-only">（外部サイトを開く）</span>
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://codecast.jp/"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="block"
+										>
+											<img
+												src="assets/sponsors/gold/codecast.jpg"
+												alt="Codecast"
+												class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
+											>
+											<span class="sr-only">（外部サイトを開く）</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<!-- Silver Sponsors -->
+							<div class="flex flex-col gap-2 items-center w-full">
+								<h3 class="font-display text-[32px] leading-none">
+									SILVER SPONSORS
+								</h3>
+								<ul class="flex flex-col gap-2 items-center w-full list-none">
+									<li class="w-[70%]">
+										<a
+											href="https://www.reiwatravel.co.jp/"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="block"
+										>
+											<img
+												src="assets/sponsors/silver/reiwa_travel.png"
+												alt="令和トラベル"
+												class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
+											>
+											<span class="sr-only">（外部サイトを開く）</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+							<!-- Bronze Sponsors -->
+							<div class="flex flex-col gap-2 items-center w-full">
+								<h3 class="font-display text-[32px] leading-none">
+									BRONZE SPONSORS
+								</h3>
+								<ul class="grid grid-cols-2 gap-3 w-full list-none">
+									<li>
+										<a
+											href="https://x.com/localtech_JP"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="block"
+										>
+											<img
+												src="assets/sponsors/bronze/local_tech.png"
+												alt="Local Tech"
+												class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
+											>
+											<span class="sr-only">（外部サイトを開く）</span>
+										</a>
+									</li>
+									<li>
+										<a
+											href="https://2026.tskaigi.org"
+											target="_blank"
+											rel="noopener noreferrer"
+											class="block"
+										>
+											<img
+												src="assets/sponsors/bronze/tskaigi.png"
+												alt="TSKaigi"
+												class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
+											>
+											<span class="sr-only">（外部サイトを開く）</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<!-- Decorative Stripe Banner -->
+					<div
+						class="relative h-48 overflow-hidden pointer-events-none select-none"
+						aria-hidden="true"
+					>
+						<!-- Band 1 (背面): -8deg, 下寄り -->
+						<div
+							class="absolute inset-0 flex items-center justify-center translate-y-8"
+						>
+							<div class="bg-[#0a0a0a] py-1 w-[250%] -rotate-[8deg]">
+								<div
+									class="inline-flex w-max whitespace-nowrap animate-marquee"
+								>
+									<div class="flex items-center gap-2 shrink-0 pr-2">
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+									</div>
+									<div class="flex items-center gap-2 shrink-0 pr-2">
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Band 2: +9deg, 上寄り -->
+						<div
+							class="absolute inset-0 flex items-center justify-center -translate-y-10"
+						>
+							<div class="bg-[#0a0a0a] py-1 w-[250%] rotate-[9deg]">
+								<div
+									class="inline-flex w-max whitespace-nowrap animate-marquee-reverse"
+								>
+									<div class="flex items-center gap-2 shrink-0 pr-2">
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+									</div>
+									<div class="flex items-center gap-2 shrink-0 pr-2">
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Band 3: -8deg, 上寄り -->
+						<div
+							class="absolute inset-0 flex items-center justify-center -translate-y-8"
+						>
+							<div class="bg-[#0a0a0a] py-1 w-[250%] -rotate-[8deg]">
+								<div
+									class="inline-flex w-max whitespace-nowrap animate-marquee"
+								>
+									<div class="flex items-center gap-2 shrink-0 pr-2">
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+									</div>
+									<div class="flex items-center gap-2 shrink-0 pr-2">
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Band 4 (前面): +9deg, 下寄り -->
+						<div
+							class="absolute inset-0 flex items-center justify-center translate-y-10"
+						>
+							<div class="bg-[#0a0a0a] py-1 w-[250%] rotate-[9deg]">
+								<div
+									class="inline-flex w-max whitespace-nowrap animate-marquee-reverse"
+								>
+									<div class="flex items-center gap-2 shrink-0 pr-2">
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+									</div>
+									<div class="flex items-center gap-2 shrink-0 pr-2">
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+										<span
+											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+											>FRONTEND CONFERENCE NAGOYA 2026</span
+										>
+										<img
+											src="./assets/eye.svg"
+											alt=""
+											class="w-7.75 h-8 shrink-0"
+										>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-				</section>
 
-				<!-- LINKS Section -->
-				<section
-					class="pt-8 pb-12 px-6 text-center"
-					aria-labelledby="links-heading"
-				>
-					<div class="flex flex-col gap-3 items-center mx-auto max-w-sm">
-						<h2
-							id="links-heading"
-							class="font-display text-[64px] leading-none text-trim"
+					<!-- JOB BOARD Section -->
+					<section
+						class="pt-0 pb-8 px-4 text-center"
+						aria-labelledby="job-board-heading"
+					>
+						<div class="max-w-lg mx-auto">
+							<h2
+								id="job-board-heading"
+								class="font-display text-5xl sm:text-6xl mb-0"
+							>
+								JOB BOARD
+							</h2>
+							<ul class="space-y-3 list-none">
+								<li>
+									<img
+										src="./assets/job-board/reiwatravel.png"
+										alt="令和トラベル Mission: テクノロジーを駆使し、旅行の未来を創る。NEWT（ニュート）かしこい、おトク、旅行アプリ。エンジニア採用中"
+										class="w-full aspect-video object-cover border-2 border-[#0a0a0a]"
+										width="1920"
+										height="1080"
+										loading="lazy"
+										decoding="async"
+									>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- MEMBER Section -->
+					<section aria-labelledby="member-heading" class="overflow-x-hidden">
+						<!-- 上帯マーキー -->
+						<div
+							class="relative bg-[#0a0a0a] py-1 overflow-hidden pointer-events-none select-none"
+							aria-hidden="true"
 						>
-							LINKS
-						</h2>
-						<p class="font-black text-base leading-relaxed">
-							各種SNSで情報発信中！
-						</p>
-						<div class="flex flex-col gap-2 items-center">
+							<div class="inline-flex w-max whitespace-nowrap animate-marquee">
+								<div class="flex items-center gap-2 shrink-0 pl-2">
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+								</div>
+								<div class="flex items-center gap-2 shrink-0 pl-2">
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+								</div>
+							</div>
+						</div>
+
+						<!-- MEMBER -->
+						<div
+							class="border border-[#0a0a0a] shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-5.5 text-center"
+						>
+							<h2
+								id="member-heading"
+								class="font-display text-5xl leading-none text-trim"
+							>
+								MEMBER
+							</h2>
+						</div>
+						<div class="grid grid-cols-3 border-l border-t border-[#0a0a0a]">
+							<!-- Yuma Satake -->
+							<a
+								href="https://x.com/yuma_satake22"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/yuma_satake22.jpg"
+										alt="Yuma Satake"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">Yuma Satake</p>
+									<p class="font-role text-[13px] font-black italic">
+										CHAIR PERSON
+									</p>
+								</div>
+							</a>
+							<!-- wabi -->
+							<a
+								href="https://x.com/wabi_1318"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/wabi_1318.jpg"
+										alt="wabi"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">wabi</p>
+									<p class="font-role text-[13px] font-black italic">
+										MERCHANDISE LEAD
+									</p>
+								</div>
+							</a>
+							<!-- did0es -->
+							<a
+								href="https://x.com/did0es"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/did0es.jpg"
+										alt="did0es"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">did0es</p>
+									<p class="font-role text-[13px] font-black italic">ADVISOR</p>
+								</div>
+							</a>
+						</div>
+
+						<!-- CFP REVIEWER -->
+						<div
+							class="border border-[#0a0a0a] shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-5.5 text-center"
+						>
+							<h3
+								id="cfp-reviewer-heading"
+								class="font-display text-5xl leading-none text-trim"
+							>
+								CFP REVIEWER
+							</h3>
+						</div>
+						<div class="grid grid-cols-3 border-l border-t border-[#0a0a0a]">
+							<!-- Watanuki -->
+							<a
+								href="https://x.com/kskwtnk"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/kskwtnk.jpg"
+										alt="Watanuki"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">Watanuki</p>
+									<p class="font-role text-[13px] font-black italic">
+										REVIEWER
+									</p>
+								</div>
+							</a>
+							<!-- aiji -->
+							<a
+								href="https://x.com/aiji42_dev"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/aiji42_dev.jpg"
+										alt="aiji"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">aiji</p>
+									<p class="font-role text-[13px] font-black italic">
+										REVIEWER
+									</p>
+								</div>
+							</a>
+							<!-- ahomu -->
+							<a
+								href="https://x.com/ahomu"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/ahomu.jpg"
+										alt="ahomu"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">ahomu</p>
+									<p class="font-role text-[13px] font-black italic">
+										REVIEWER
+									</p>
+								</div>
+							</a>
+						</div>
+
+						<!-- DESIGNER -->
+						<div
+							class="border border-[#0a0a0a] shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-5.5 text-center"
+						>
+							<h3
+								id="designer-heading"
+								class="font-display text-5xl leading-none text-trim"
+							>
+								DESIGNER
+							</h3>
+						</div>
+						<div class="grid grid-cols-3 border-l border-t border-[#0a0a0a]">
+							<!-- 装飾枠 1 -->
+							<div
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
+								aria-hidden="true"
+							>
+								<!-- バンド1: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド2: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド3: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド4: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Nao Sasaki -->
+							<a
+								href="https://x.com/lanberb__"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<div
+										class="size-[102px] bg-gray-200 flex items-center justify-center"
+									>
+										<span class="text-gray-400 text-xs">No Image</span>
+									</div>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">Nao Sasaki</p>
+									<p class="font-role text-[13px] font-black italic">
+										DESIGNER
+									</p>
+								</div>
+							</a>
+							<!-- 装飾枠 2 -->
+							<div
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
+								aria-hidden="true"
+							>
+								<!-- バンド1: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド2: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド3: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド4: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- STAFF -->
+						<div
+							class="border border-[#0a0a0a] shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-5.5 text-center"
+						>
+							<h3
+								id="staff-heading"
+								class="font-display text-5xl leading-none text-trim"
+							>
+								STAFF
+							</h3>
+						</div>
+						<div class="grid grid-cols-3 border-l border-t border-[#0a0a0a]">
+							<!-- 装飾枠 -->
+							<div
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
+								aria-hidden="true"
+							>
+								<!-- バンド1: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド2: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド3: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド4: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- sasanqua -->
+							<a
+								href="https://x.com/sasanqua_dev"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/sasanqua_dev.jpg"
+										alt="sasanqua"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">sasanqua</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</a>
+							<!-- gyuho -->
+							<a
+								href="http://info.gyuh.ooo"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/info.gyuh.ooo.jpeg"
+										alt="gyuho"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">gyuho</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</a>
+							<!-- kanon -->
+							<a
+								href="https://x.com/kanon_k4"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/kanon_k4.jpg"
+										alt="kanon"
+										class="size-[102px] object-contain"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">kanon</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</a>
+							<!-- 0yu -->
+							<a
+								href="https://x.com/yud0uhu"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/yud0uhu.jpg"
+										alt="0yu"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">0yu</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</a>
+							<!-- hashimo2 -->
+							<a
+								href="https://x.com/_hashimo2"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/_hashimo2.jpg"
+										alt="hashimo2"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">hashimo2</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</a>
+							<!-- oldsheep -->
+							<a
+								href="https://x.com/oldsheeep"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/oldsheeep.jpg"
+										alt="oldsheep"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">oldsheep</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</a>
+							<!-- hmatsu47 -->
+							<a
+								href="https://x.com/hmatsu47"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/hmatsu47.jpg"
+										alt="hmatsu47"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">hmatsu47</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</a>
+							<!-- 装飾枠 (row3-col3) -->
+							<div
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
+								aria-hidden="true"
+							>
+								<!-- バンド1: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド2: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド3: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド4: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- raiga -->
+							<a
+								href="https://x.com/ahoxa1rx"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/ahoxa1rx.jpg"
+										alt="raiga"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">raiga</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</a>
+							<!-- 装飾枠 (row4-col1) -->
+							<div
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
+								aria-hidden="true"
+							>
+								<!-- バンド1: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド2: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド3: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド4: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- ryu -->
+							<a
+								href="https://x.com/ryu_develop"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/ryu_develop.jpg"
+										alt="ryu"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">ryu</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</a>
+							<!-- Wonder -->
+							<a
+								href="https://x.com/iwonder118"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/iwonder118.jpg"
+										alt="Wonder"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">Wonder</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</a>
+							<!-- aimi (リンクなし) -->
+							<div
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/aimi.jpg"
+										alt="aimi"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">aimi</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</div>
+							<!-- Utahshi -->
+							<a
+								href="https://x.com/StateofUtahshi"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/StateofUtahshi.png"
+										alt="Utahshi"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">Utahshi</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</a>
+							<!-- 装飾枠 (row6-col1) -->
+							<div
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
+								aria-hidden="true"
+							>
+								<!-- バンド1: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド2: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド3: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド4: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- kojima -->
+							<a
+								href="https://x.com/kjm_dev"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
+							>
+								<div class="px-4 pt-4 pb-2">
+									<img
+										src="./assets/staff-icon/kjm_dev.png"
+										alt="kojima"
+										class="size-[102px] object-cover"
+									>
+								</div>
+								<div class="text-center pb-2.5 leading-none space-y-1 w-full">
+									<p class="font-display text-xl">kojima</p>
+									<p class="font-role text-[13px] font-black italic">STAFF</p>
+								</div>
+							</a>
+							<!-- 装飾枠 2 -->
+							<div
+								class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
+								aria-hidden="true"
+							>
+								<!-- バンド1: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド2: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+											<img
+												src="./assets/eye.svg"
+												alt=""
+												class="w-7.75 h-8 shrink-0"
+											>
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド3: -8deg, marquee -->
+								<div
+									class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+								<!-- バンド4: 9deg, marquee-reverse -->
+								<div
+									class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
+								>
+									<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
+										<div class="flex items-center gap-2 shrink-0">
+											<span
+												class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+												>FRONTEND CONFERENCE NAGOYA 2026</span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 下帯マーキー -->
+						<div
+							class="relative bg-[#0a0a0a] py-1 overflow-hidden pointer-events-none select-none"
+							aria-hidden="true"
+						>
+							<div class="inline-flex w-max whitespace-nowrap animate-marquee">
+								<div class="flex items-center gap-2 shrink-0 pl-2">
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+								</div>
+								<div class="flex items-center gap-2 shrink-0 pl-2">
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+									<span
+										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
+										>MEMBER</span
+									>
+									<img
+										src="./assets/eye.svg"
+										alt=""
+										class="w-7.75 h-8 shrink-0"
+										aria-hidden="true"
+									>
+								</div>
+							</div>
+						</div>
+
+						<!-- Wave Separator + Mascot Background -->
+						<div
+							class="bg-[#fafafa] bg-[url('assets/bg-mascot-section.svg')] bg-size-[7px_14px] bg-repeat overflow-hidden pointer-events-none select-none"
+							aria-hidden="true"
+						>
+							<div class="footer-wave -scale-y-100"></div>
+							<div class="h-20"></div>
+							<div class="footer-wave"></div>
+						</div>
+					</section>
+				</main>
+
+				<!-- Footer -->
+				<footer>
+					<!-- Content -->
+					<div
+						class="bg-[#0a0a0a] flex flex-col gap-8 items-start pt-8 pb-4 px-6"
+					>
+						<!-- Logo -->
+						<div>
+							<img
+								src="./assets/logo-footer-main.svg"
+								alt="Frontend Conference"
+								class="w-60"
+							>
+							<img
+								src="./assets/logo-footer-hashtag.svg"
+								alt="#NAGOYA2026"
+								class="w-[179px] mt-2"
+							>
+						</div>
+
+						<!-- Links -->
+						<nav class="flex gap-8" aria-label="フッターリンク">
+							<a
+								href="https://docs.google.com/document/d/1OM7GyErnewKJTP3flwIsluei4MyFnlRF05SUhnHdw_Q/edit?usp=sharing"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="flex items-center gap-3 font-bold text-sm text-[#6b6b6b] hover:text-[#8b8b8b] transition-colors"
+							>
+								行動規範
+								<span class="sr-only">（新しいタブで開きます）</span>
+								<svg
+									class="size-2"
+									viewBox="0 0 4.18 7.36"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+									aria-hidden="true"
+								>
+									<path
+										d="M4.04 4.04C4.23 3.84 4.23 3.52 4.04 3.33L0.85 0.15C0.66-0.05 0.34-0.05 0.15 0.15C-0.05 0.34-0.05 0.66 0.15 0.85L2.97 3.68L0.15 6.51C-0.05 6.71-0.05 7.02 0.15 7.22C0.34 7.41 0.66 7.41 0.85 7.22L4.04 4.04Z"
+										fill="currentColor"
+									/>
+								</svg>
+							</a>
 							<a
 								href="https://x.com/fec_nagoya"
 								target="_blank"
 								rel="noopener noreferrer"
-								class="flex items-center justify-center gap-4 bg-[#0a0a0a] text-[#fafafa] font-bold text-base leading-none text-trim h-10 px-8 rounded w-72 hover:opacity-80 transition-opacity"
+								class="flex items-center gap-3 font-bold text-sm text-[#6b6b6b] hover:text-[#8b8b8b] transition-colors"
 							>
-								<img
-									src="./assets/icon-x.svg"
-									alt=""
-									class="w-5 h-5"
+								公式X
+								<span class="sr-only">（新しいタブで開きます）</span>
+								<svg
+									class="size-2"
+									viewBox="0 0 4.18 7.36"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
 									aria-hidden="true"
 								>
-								公式Xをひらく<span class="sr-only"
-									>（新しいタブで開きます）</span
-								>
+									<path
+										d="M4.04 4.04C4.23 3.84 4.23 3.52 4.04 3.33L0.85 0.15C0.66-0.05 0.34-0.05 0.15 0.15C-0.05 0.34-0.05 0.66 0.15 0.85L2.97 3.68L0.15 6.51C-0.05 6.71-0.05 7.02 0.15 7.22C0.34 7.41 0.66 7.41 0.85 7.22L4.04 4.04Z"
+										fill="currentColor"
+									/>
+								</svg>
 							</a>
 							<a
 								href="https://note.com/fec_nagoya"
 								target="_blank"
 								rel="noopener noreferrer"
-								class="flex items-center justify-center gap-4 bg-[#fafafa] border-2 border-[#0a0a0a] text-[#0a0a0a] font-black text-base leading-none text-trim h-10 px-8 rounded w-72 hover:opacity-80 transition-opacity"
+								class="flex items-center gap-3 font-bold text-sm text-[#6b6b6b] hover:text-[#8b8b8b] transition-colors"
 							>
-								<img
-									src="./assets/icon-note.svg"
-									alt=""
-									class="w-5 h-5"
+								公式note
+								<span class="sr-only">（新しいタブで開きます）</span>
+								<svg
+									class="size-2"
+									viewBox="0 0 4.18 7.36"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
 									aria-hidden="true"
 								>
-								公式noteをひらく<span class="sr-only"
-									>（新しいタブで開きます）</span
-								>
+									<path
+										d="M4.04 4.04C4.23 3.84 4.23 3.52 4.04 3.33L0.85 0.15C0.66-0.05 0.34-0.05 0.15 0.15C-0.05 0.34-0.05 0.66 0.15 0.85L2.97 3.68L0.15 6.51C-0.05 6.71-0.05 7.02 0.15 7.22C0.34 7.41 0.66 7.41 0.85 7.22L4.04 4.04Z"
+										fill="currentColor"
+									/>
+								</svg>
 							</a>
-							<p class="text-[10px]">※外部サイトを開きます</p>
-						</div>
+						</nav>
+
+						<!-- Copyright -->
+						<p
+							class="w-full text-center font-bold text-[10px] text-[#6b6b6b] tracking-[0.8px] leading-relaxed"
+						>
+							&copy;フロントエンドカンファレンス名古屋実行委員会
+						</p>
 					</div>
-				</section>
-
-				<div
-					class="location-wave location-wave--top pointer-events-none select-none"
-					aria-hidden="true"
-				></div>
-
-				<!-- LOCATION Section -->
-				<section
-					class="location-shell relative overflow-hidden px-8 pt-6 pb-12 text-white"
-					aria-labelledby="location-heading"
-				>
-					<div
-						class="relative z-10 mx-auto flex max-w-lg flex-col items-center gap-10"
-					>
-						<div
-							class="flex w-[259.86px] max-w-full flex-col items-center pb-2 text-center"
-						>
-							<h2 id="location-heading" class="sr-only">LOCATION</h2>
-							<div
-								class="relative mb-[-8px] h-[38.685px] w-[151.377px] shrink-0"
-								aria-hidden="true"
-							>
-								<img
-									src="./assets/location-header-title.svg"
-									alt=""
-									class="absolute block size-full max-w-none"
-								>
-							</div>
-							<div
-								class="relative mb-2 h-[33.831px] w-[21.528px] shrink-0"
-								aria-hidden="true"
-							>
-								<img
-									src="./assets/location-header-pin.svg"
-									alt=""
-									class="absolute block size-full max-w-none"
-								>
-							</div>
-							<div
-								class="relative h-9 w-[259.86px] max-w-full shrink-0"
-								aria-hidden="true"
-							>
-								<img
-									src="./assets/location-header-curve.svg"
-									alt=""
-									class="absolute block size-full max-w-none"
-								>
-							</div>
-						</div>
-
-						<div class="flex w-full flex-col gap-6">
-							<figure class="location-route-section mx-auto">
-								<div class="location-route-header location-route-header--train">
-									<span
-										aria-hidden="true"
-										class="location-route-header-line"
-									></span>
-									<h3 class="location-route-header-title">電車でお越しの方</h3>
-									<span
-										aria-hidden="true"
-										class="location-route-header-line"
-									></span>
-								</div>
-								<img
-									src="./assets/location-train-section.svg"
-									alt=""
-									aria-hidden="true"
-									class="location-route-content location-route-content--train"
-								>
-								<figcaption>
-									<ul class="location-route-description">
-										<li>JR名古屋駅桜通口: ミッドランドスクエア方面徒歩5分</li>
-										<li>JR新幹線口: 徒歩9分</li>
-									</ul>
-								</figcaption>
-							</figure>
-
-							<figure class="location-route-section mx-auto">
-								<div
-									class="location-route-header location-route-header--flight"
-								>
-									<span
-										aria-hidden="true"
-										class="location-route-header-line"
-									></span>
-									<h3 class="location-route-header-title">
-										飛行機でお越しの方
-									</h3>
-									<span
-										aria-hidden="true"
-										class="location-route-header-line"
-									></span>
-								</div>
-								<img
-									src="./assets/location-flight-section.svg"
-									alt=""
-									aria-hidden="true"
-									class="location-route-content location-route-content--flight"
-								>
-								<figcaption>
-									<ul class="location-route-description">
-										<li>中部国際空港から名古屋駅: 名鉄空港線30分</li>
-										<li>名古屋駅からウインクあいち: 徒歩9分</li>
-									</ul>
-								</figcaption>
-							</figure>
-						</div>
-
-						<div class="w-full">
-							<div class="location-map-frame">
-								<div
-									id="location-map"
-									class="block h-72 w-full"
-									aria-label="名古屋駅からウインクあいちまでの徒歩経路地図"
-									hidden
-								></div>
-								<iframe
-									id="location-map-fallback"
-									title="ウインクあいちへの地図"
-									src="https://www.google.com/maps?q=%E3%82%A6%E3%82%A4%E3%83%B3%E3%82%AF%E3%81%82%E3%81%84%E3%81%A1%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E6%9D%91%E5%8C%BA%E5%90%8D%E9%A7%854%E4%B8%81%E7%9B%AE4-38&z=16&output=embed"
-									class="block h-72 w-full"
-									loading="lazy"
-									referrerpolicy="no-referrer-when-downgrade"
-								></iframe>
-							</div>
-						</div>
-						<div class="location-route-link-group">
-							<a
-								href="https://www.google.com/maps/dir/?api=1&destination=%E3%82%A6%E3%82%A4%E3%83%B3%E3%82%AF%E3%81%82%E3%81%84%E3%81%A1%20%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E6%9D%91%E5%8C%BA%E5%90%8D%E9%A7%854%E4%B8%81%E7%9B%AE4-38"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="location-route-link"
-							>
-								<span class="location-route-link-label"
-									>会場までのルートをみる</span
-								>
-								<span class="location-route-link-icon" aria-hidden="true">
-									<svg class="size-4" viewBox="0 0 24 24" fill="currentColor">
-										<path
-											d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
-										/>
-									</svg>
-								</span>
-							</a>
-							<p class="location-route-link-note">※Google Mapを開きます</p>
-						</div>
-					</div>
-				</section>
-
-				<div
-					class="location-wave location-wave--bottom pointer-events-none select-none"
-					aria-hidden="true"
-				></div>
-
-				<!-- SPONSORS Section -->
-				<section
-					class="pt-12 pb-2 px-4 text-center"
-					aria-labelledby="sponsors-heading"
-				>
-					<div class="flex flex-col gap-4 items-center max-w-92.5 mx-auto">
-						<h2
-							id="sponsors-heading"
-							class="font-display text-[64px] leading-none"
-						>
-							SPONSORS
-						</h2>
-
-						<!-- Platinum Sponsors -->
-						<div class="flex flex-col gap-2 items-center w-full">
-							<h3 class="font-display text-[32px] leading-none">
-								PLATINUM SPONSORS
-							</h3>
-							<ul class="flex flex-col gap-3 w-full list-none">
-								<li>
-									<a
-										href="https://corp.kaonavi.jp/"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="block"
-									>
-										<img
-											src="assets/sponsors/platinum/kaonavi.png"
-											alt="kaonavi"
-											class="w-full aspect-320/180 object-contain bg-white border-2 border-[#0a0a0a]"
-										>
-										<span class="sr-only">（外部サイトを開く）</span>
-									</a>
-								</li>
-								<li>
-									<a
-										href="https://stmn.co.jp/"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="block"
-									>
-										<img
-											src="assets/sponsors/platinum/stmn.png"
-											alt="stmn"
-											class="w-full aspect-320/180 object-contain bg-white border-2 border-[#0a0a0a]"
-										>
-										<span class="sr-only">（外部サイトを開く）</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-
-						<!-- Gold Sponsors -->
-						<div class="flex flex-col gap-2 items-center w-full">
-							<h3 class="font-display text-[32px] leading-none">
-								GOLD SPONSORS
-							</h3>
-							<ul class="flex flex-col gap-2 w-full list-none">
-								<li>
-									<a
-										href="https://leaner.co.jp/"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="block"
-									>
-										<img
-											src="assets/sponsors/gold/leaner.jpg"
-											alt="Leaner"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
-										>
-										<span class="sr-only">（外部サイトを開く）</span>
-									</a>
-								</li>
-								<li>
-									<a
-										href="https://developers.prtimes.jp/"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="block"
-									>
-										<img
-											src="assets/sponsors/gold/prtimes.png"
-											alt="PR TIMES"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
-										>
-										<span class="sr-only">（外部サイトを開く）</span>
-									</a>
-								</li>
-								<li>
-									<a
-										href="https://kokorozashi-japan.co.jp/"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="block"
-									>
-										<img
-											src="assets/sponsors/gold/kokorozashi.png"
-											alt="kokorozashi"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
-										>
-										<span class="sr-only">（外部サイトを開く）</span>
-									</a>
-								</li>
-								<li>
-									<a
-										href="https://chot-inc.com/"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="block"
-									>
-										<img
-											src="assets/sponsors/gold/chot_inc.png"
-											alt="chot inc."
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
-										>
-										<span class="sr-only">（外部サイトを開く）</span>
-									</a>
-								</li>
-								<li>
-									<a
-										href="https://codecast.jp/"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="block"
-									>
-										<img
-											src="assets/sponsors/gold/codecast.jpg"
-											alt="Codecast"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
-										>
-										<span class="sr-only">（外部サイトを開く）</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-
-						<!-- Silver Sponsors -->
-						<div class="flex flex-col gap-2 items-center w-full">
-							<h3 class="font-display text-[32px] leading-none">
-								SILVER SPONSORS
-							</h3>
-							<ul class="flex flex-col gap-2 items-center w-full list-none">
-								<li class="w-[70%]">
-									<a
-										href="https://www.reiwatravel.co.jp/"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="block"
-									>
-										<img
-											src="assets/sponsors/silver/reiwa_travel.png"
-											alt="令和トラベル"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
-										>
-										<span class="sr-only">（外部サイトを開く）</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-
-						<!-- Bronze Sponsors -->
-						<div class="flex flex-col gap-2 items-center w-full">
-							<h3 class="font-display text-[32px] leading-none">
-								BRONZE SPONSORS
-							</h3>
-							<ul class="grid grid-cols-2 gap-3 w-full list-none">
-								<li>
-									<a
-										href="https://x.com/localtech_JP"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="block"
-									>
-										<img
-											src="assets/sponsors/bronze/local_tech.png"
-											alt="Local Tech"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
-										>
-										<span class="sr-only">（外部サイトを開く）</span>
-									</a>
-								</li>
-								<li>
-									<a
-										href="https://2026.tskaigi.org"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="block"
-									>
-										<img
-											src="assets/sponsors/bronze/tskaigi.png"
-											alt="TSKaigi"
-											class="w-full aspect-320/180 object-contain bg-white px-8 py-4 border-2 border-[#0a0a0a]"
-										>
-										<span class="sr-only">（外部サイトを開く）</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</section>
-
-				<!-- Decorative Stripe Banner -->
-				<div
-					class="relative h-48 overflow-hidden pointer-events-none select-none"
-					aria-hidden="true"
-				>
-					<!-- Band 1 (背面): -8deg, 下寄り -->
-					<div
-						class="absolute inset-0 flex items-center justify-center translate-y-8"
-					>
-						<div class="bg-[#0a0a0a] py-1 w-[250%] -rotate-[8deg]">
-							<div class="inline-flex w-max whitespace-nowrap animate-marquee">
-								<div class="flex items-center gap-2 shrink-0 pr-2">
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-								</div>
-								<div class="flex items-center gap-2 shrink-0 pr-2">
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Band 2: +9deg, 上寄り -->
-					<div
-						class="absolute inset-0 flex items-center justify-center -translate-y-10"
-					>
-						<div class="bg-[#0a0a0a] py-1 w-[250%] rotate-[9deg]">
-							<div
-								class="inline-flex w-max whitespace-nowrap animate-marquee-reverse"
-							>
-								<div class="flex items-center gap-2 shrink-0 pr-2">
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-								</div>
-								<div class="flex items-center gap-2 shrink-0 pr-2">
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Band 3: -8deg, 上寄り -->
-					<div
-						class="absolute inset-0 flex items-center justify-center -translate-y-8"
-					>
-						<div class="bg-[#0a0a0a] py-1 w-[250%] -rotate-[8deg]">
-							<div class="inline-flex w-max whitespace-nowrap animate-marquee">
-								<div class="flex items-center gap-2 shrink-0 pr-2">
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-								</div>
-								<div class="flex items-center gap-2 shrink-0 pr-2">
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Band 4 (前面): +9deg, 下寄り -->
-					<div
-						class="absolute inset-0 flex items-center justify-center translate-y-10"
-					>
-						<div class="bg-[#0a0a0a] py-1 w-[250%] rotate-[9deg]">
-							<div
-								class="inline-flex w-max whitespace-nowrap animate-marquee-reverse"
-							>
-								<div class="flex items-center gap-2 shrink-0 pr-2">
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-								</div>
-								<div class="flex items-center gap-2 shrink-0 pr-2">
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-									<span
-										class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-										>FRONTEND CONFERENCE NAGOYA 2026</span
-									>
-									<img
-										src="./assets/eye.svg"
-										alt=""
-										class="w-7.75 h-8 shrink-0"
-									>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- JOB BOARD Section -->
-				<section
-					class="pt-0 pb-8 px-4 text-center"
-					aria-labelledby="job-board-heading"
-				>
-					<div class="max-w-lg mx-auto">
-						<h2
-							id="job-board-heading"
-							class="font-display text-5xl sm:text-6xl mb-0"
-						>
-							JOB BOARD
-						</h2>
-						<ul class="space-y-3 list-none">
-							<li>
-								<img
-									src="./assets/job-board/reiwatravel.png"
-									alt="令和トラベル Mission: テクノロジーを駆使し、旅行の未来を創る。NEWT（ニュート）かしこい、おトク、旅行アプリ。エンジニア採用中"
-									class="w-full aspect-video object-cover border-2 border-[#0a0a0a]"
-									width="1920"
-									height="1080"
-									loading="lazy"
-									decoding="async"
-								>
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<!-- MEMBER Section -->
-				<section aria-labelledby="member-heading" class="overflow-x-hidden">
-					<!-- 上帯マーキー -->
-					<div
-						class="relative bg-[#0a0a0a] py-1 overflow-hidden pointer-events-none select-none"
-						aria-hidden="true"
-					>
-						<div class="inline-flex w-max whitespace-nowrap animate-marquee">
-							<div class="flex items-center gap-2 shrink-0 pl-2">
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-							</div>
-							<div class="flex items-center gap-2 shrink-0 pl-2">
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-							</div>
-						</div>
-					</div>
-
-					<!-- MEMBER -->
-					<div
-						class="border border-[#0a0a0a] shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-5.5 text-center"
-					>
-						<h2
-							id="member-heading"
-							class="font-display text-5xl leading-none text-trim"
-						>
-							MEMBER
-						</h2>
-					</div>
-					<div class="grid grid-cols-3 border-l border-t border-[#0a0a0a]">
-						<!-- Yuma Satake -->
-						<a
-							href="https://x.com/yuma_satake22"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/yuma_satake22.jpg"
-									alt="Yuma Satake"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">Yuma Satake</p>
-								<p class="font-role text-[13px] font-black italic">
-									CHAIR PERSON
-								</p>
-							</div>
-						</a>
-						<!-- wabi -->
-						<a
-							href="https://x.com/wabi_1318"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/wabi_1318.jpg"
-									alt="wabi"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">wabi</p>
-								<p class="font-role text-[13px] font-black italic">
-									MERCHANDISE LEAD
-								</p>
-							</div>
-						</a>
-						<!-- did0es -->
-						<a
-							href="https://x.com/did0es"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/did0es.jpg"
-									alt="did0es"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">did0es</p>
-								<p class="font-role text-[13px] font-black italic">ADVISOR</p>
-							</div>
-						</a>
-					</div>
-
-					<!-- CFP REVIEWER -->
-					<div
-						class="border border-[#0a0a0a] shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-5.5 text-center"
-					>
-						<h3
-							id="cfp-reviewer-heading"
-							class="font-display text-5xl leading-none text-trim"
-						>
-							CFP REVIEWER
-						</h3>
-					</div>
-					<div class="grid grid-cols-3 border-l border-t border-[#0a0a0a]">
-						<!-- Watanuki -->
-						<a
-							href="https://x.com/kskwtnk"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/kskwtnk.jpg"
-									alt="Watanuki"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">Watanuki</p>
-								<p class="font-role text-[13px] font-black italic">REVIEWER</p>
-							</div>
-						</a>
-						<!-- aiji -->
-						<a
-							href="https://x.com/aiji42_dev"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/aiji42_dev.jpg"
-									alt="aiji"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">aiji</p>
-								<p class="font-role text-[13px] font-black italic">REVIEWER</p>
-							</div>
-						</a>
-						<!-- ahomu -->
-						<a
-							href="https://x.com/ahomu"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/ahomu.jpg"
-									alt="ahomu"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">ahomu</p>
-								<p class="font-role text-[13px] font-black italic">REVIEWER</p>
-							</div>
-						</a>
-					</div>
-
-					<!-- DESIGNER -->
-					<div
-						class="border border-[#0a0a0a] shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-5.5 text-center"
-					>
-						<h3
-							id="designer-heading"
-							class="font-display text-5xl leading-none text-trim"
-						>
-							DESIGNER
-						</h3>
-					</div>
-					<div class="grid grid-cols-3 border-l border-t border-[#0a0a0a]">
-						<!-- 装飾枠 1 -->
-						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
-							aria-hidden="true"
-						>
-							<!-- バンド1: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド2: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド3: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド4: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Nao Sasaki -->
-						<a
-							href="https://x.com/lanberb__"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<div
-									class="size-[102px] bg-gray-200 flex items-center justify-center"
-								>
-									<span class="text-gray-400 text-xs">No Image</span>
-								</div>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">Nao Sasaki</p>
-								<p class="font-role text-[13px] font-black italic">DESIGNER</p>
-							</div>
-						</a>
-						<!-- 装飾枠 2 -->
-						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
-							aria-hidden="true"
-						>
-							<!-- バンド1: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド2: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド3: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド4: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- STAFF -->
-					<div
-						class="border border-[#0a0a0a] shadow-[0_4px_4px_rgba(0,0,0,0.25)] py-5.5 text-center"
-					>
-						<h3
-							id="staff-heading"
-							class="font-display text-5xl leading-none text-trim"
-						>
-							STAFF
-						</h3>
-					</div>
-					<div class="grid grid-cols-3 border-l border-t border-[#0a0a0a]">
-						<!-- 装飾枠 -->
-						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
-							aria-hidden="true"
-						>
-							<!-- バンド1: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド2: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド3: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド4: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- sasanqua -->
-						<a
-							href="https://x.com/sasanqua_dev"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/sasanqua_dev.jpg"
-									alt="sasanqua"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">sasanqua</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</a>
-						<!-- gyuho -->
-						<a
-							href="http://info.gyuh.ooo"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/info.gyuh.ooo.jpeg"
-									alt="gyuho"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">gyuho</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</a>
-						<!-- kanon -->
-						<a
-							href="https://x.com/kanon_k4"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/kanon_k4.jpg"
-									alt="kanon"
-									class="size-[102px] object-contain"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">kanon</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</a>
-						<!-- 0yu -->
-						<a
-							href="https://x.com/yud0uhu"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/yud0uhu.jpg"
-									alt="0yu"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">0yu</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</a>
-						<!-- hashimo2 -->
-						<a
-							href="https://x.com/_hashimo2"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/_hashimo2.jpg"
-									alt="hashimo2"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">hashimo2</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</a>
-						<!-- oldsheep -->
-						<a
-							href="https://x.com/oldsheeep"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/oldsheeep.jpg"
-									alt="oldsheep"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">oldsheep</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</a>
-						<!-- hmatsu47 -->
-						<a
-							href="https://x.com/hmatsu47"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/hmatsu47.jpg"
-									alt="hmatsu47"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">hmatsu47</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</a>
-						<!-- 装飾枠 (row3-col3) -->
-						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
-							aria-hidden="true"
-						>
-							<!-- バンド1: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド2: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド3: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド4: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- raiga -->
-						<a
-							href="https://x.com/ahoxa1rx"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/ahoxa1rx.jpg"
-									alt="raiga"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">raiga</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</a>
-						<!-- 装飾枠 (row4-col1) -->
-						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
-							aria-hidden="true"
-						>
-							<!-- バンド1: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド2: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド3: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド4: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- ryu -->
-						<a
-							href="https://x.com/ryu_develop"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/ryu_develop.jpg"
-									alt="ryu"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">ryu</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</a>
-						<!-- Wonder -->
-						<a
-							href="https://x.com/iwonder118"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/iwonder118.jpg"
-									alt="Wonder"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">Wonder</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</a>
-						<!-- aimi (リンクなし) -->
-						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/aimi.jpg"
-									alt="aimi"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">aimi</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</div>
-						<!-- Utahshi -->
-						<a
-							href="https://x.com/StateofUtahshi"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/StateofUtahshi.png"
-									alt="Utahshi"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">Utahshi</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</a>
-						<!-- 装飾枠 (row6-col1) -->
-						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
-							aria-hidden="true"
-						>
-							<!-- バンド1: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド2: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド3: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド4: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- kojima -->
-						<a
-							href="https://x.com/kjm_dev"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] flex flex-col items-center transition-colors hover:bg-[#0a0a0a] hover:text-[#fafafa]"
-						>
-							<div class="px-4 pt-4 pb-2">
-								<img
-									src="./assets/staff-icon/kjm_dev.png"
-									alt="kojima"
-									class="size-[102px] object-cover"
-								>
-							</div>
-							<div class="text-center pb-2.5 leading-none space-y-1 w-full">
-								<p class="font-display text-xl">kojima</p>
-								<p class="font-role text-[13px] font-black italic">STAFF</p>
-							</div>
-						</a>
-						<!-- 装飾枠 2 -->
-						<div
-							class="border-r border-b border-[#0a0a0a] bg-[#fafafa] relative overflow-hidden pointer-events-none select-none"
-							aria-hidden="true"
-						>
-							<!-- バンド1: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[8%] -translate-x-1/2 -rotate-11 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[335px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド2: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[38%] -translate-x-1/2 rotate-18 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[415px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-										<img
-											src="./assets/eye.svg"
-											alt=""
-											class="w-7.75 h-8 shrink-0"
-										>
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド3: -8deg, marquee -->
-							<div
-								class="absolute left-1/2 top-[75%] -translate-x-1/2 -rotate-8 w-[250%] h-10 z-20 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-2.5">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-							<!-- バンド4: 9deg, marquee-reverse -->
-							<div
-								class="absolute left-1/2 top-[95%] -translate-x-1/2 rotate-15 w-[250%] h-10 z-10 bg-[#0a0a0a] overflow-hidden flex items-center"
-							>
-								<div class="inline-flex w-max whitespace-nowrap -ml-[300px]">
-									<div class="flex items-center gap-2 shrink-0">
-										<span
-											class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-											>FRONTEND CONFERENCE NAGOYA 2026</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- 下帯マーキー -->
-					<div
-						class="relative bg-[#0a0a0a] py-1 overflow-hidden pointer-events-none select-none"
-						aria-hidden="true"
-					>
-						<div class="inline-flex w-max whitespace-nowrap animate-marquee">
-							<div class="flex items-center gap-2 shrink-0 pl-2">
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-							</div>
-							<div class="flex items-center gap-2 shrink-0 pl-2">
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-								<span
-									class="font-display text-[28px] leading-none tracking-[0.56px] text-[#FAFAFA] shrink-0 text-trim"
-									>MEMBER</span
-								>
-								<img
-									src="./assets/eye.svg"
-									alt=""
-									class="w-7.75 h-8 shrink-0"
-									aria-hidden="true"
-								>
-							</div>
-						</div>
-					</div>
-
-					<!-- Wave Separator + Mascot Background -->
-					<div
-						class="bg-[#fafafa] bg-[url('assets/bg-mascot-section.svg')] bg-size-[7px_14px] bg-repeat overflow-hidden pointer-events-none select-none"
-						aria-hidden="true"
-					>
-						<div class="footer-wave -scale-y-100"></div>
-						<div class="h-20"></div>
-						<div class="footer-wave"></div>
-					</div>
-				</section>
-			</main>
-
-			<!-- Footer -->
-			<footer>
-				<!-- Content -->
-				<div
-					class="bg-[#0a0a0a] flex flex-col gap-8 items-start pt-8 pb-4 px-6"
-				>
-					<!-- Logo -->
-					<div>
-						<img
-							src="./assets/logo-footer-main.svg"
-							alt="Frontend Conference"
-							class="w-60"
-						>
-						<img
-							src="./assets/logo-footer-hashtag.svg"
-							alt="#NAGOYA2026"
-							class="w-[179px] mt-2"
-						>
-					</div>
-
-					<!-- Links -->
-					<nav class="flex gap-8" aria-label="フッターリンク">
-						<a
-							href="https://docs.google.com/document/d/1OM7GyErnewKJTP3flwIsluei4MyFnlRF05SUhnHdw_Q/edit?usp=sharing"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="flex items-center gap-3 font-bold text-sm text-[#6b6b6b] hover:text-[#8b8b8b] transition-colors"
-						>
-							行動規範
-							<span class="sr-only">（新しいタブで開きます）</span>
-							<svg
-								class="size-2"
-								viewBox="0 0 4.18 7.36"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-								aria-hidden="true"
-							>
-								<path
-									d="M4.04 4.04C4.23 3.84 4.23 3.52 4.04 3.33L0.85 0.15C0.66-0.05 0.34-0.05 0.15 0.15C-0.05 0.34-0.05 0.66 0.15 0.85L2.97 3.68L0.15 6.51C-0.05 6.71-0.05 7.02 0.15 7.22C0.34 7.41 0.66 7.41 0.85 7.22L4.04 4.04Z"
-									fill="currentColor"
-								/>
-							</svg>
-						</a>
-						<a
-							href="https://x.com/fec_nagoya"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="flex items-center gap-3 font-bold text-sm text-[#6b6b6b] hover:text-[#8b8b8b] transition-colors"
-						>
-							公式X
-							<span class="sr-only">（新しいタブで開きます）</span>
-							<svg
-								class="size-2"
-								viewBox="0 0 4.18 7.36"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-								aria-hidden="true"
-							>
-								<path
-									d="M4.04 4.04C4.23 3.84 4.23 3.52 4.04 3.33L0.85 0.15C0.66-0.05 0.34-0.05 0.15 0.15C-0.05 0.34-0.05 0.66 0.15 0.85L2.97 3.68L0.15 6.51C-0.05 6.71-0.05 7.02 0.15 7.22C0.34 7.41 0.66 7.41 0.85 7.22L4.04 4.04Z"
-									fill="currentColor"
-								/>
-							</svg>
-						</a>
-						<a
-							href="https://note.com/fec_nagoya"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="flex items-center gap-3 font-bold text-sm text-[#6b6b6b] hover:text-[#8b8b8b] transition-colors"
-						>
-							公式note
-							<span class="sr-only">（新しいタブで開きます）</span>
-							<svg
-								class="size-2"
-								viewBox="0 0 4.18 7.36"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-								aria-hidden="true"
-							>
-								<path
-									d="M4.04 4.04C4.23 3.84 4.23 3.52 4.04 3.33L0.85 0.15C0.66-0.05 0.34-0.05 0.15 0.15C-0.05 0.34-0.05 0.66 0.15 0.85L2.97 3.68L0.15 6.51C-0.05 6.71-0.05 7.02 0.15 7.22C0.34 7.41 0.66 7.41 0.85 7.22L4.04 4.04Z"
-									fill="currentColor"
-								/>
-							</svg>
-						</a>
-					</nav>
-
-					<!-- Copyright -->
-					<p
-						class="w-full text-center font-bold text-[10px] text-[#6b6b6b] tracking-[0.8px] leading-relaxed"
-					>
-						&copy;フロントエンドカンファレンス名古屋実行委員会
-					</p>
-				</div>
-			</footer>
+				</footer>
+			</div>
 		</div>
 		<script>
 		window.FEC_NAGOYA_GOOGLE_MAPS_API_KEY =
