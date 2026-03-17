@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
-html,
 body {
-	background-color: #fafafa;
 	background-image:
 		url("./assets/bg-text-pattern.svg"), url("./assets/bg-mascot.svg");
 	background-repeat: repeat;
@@ -11,7 +9,6 @@ body {
 		9px 19px;
 	background-position: left top;
 	background-attachment: fixed;
-	overscroll-behavior: none;
 }
 
 .hero-header {
