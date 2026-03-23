@@ -12,9 +12,15 @@ body {
 }
 
 .hero-header {
-	background-image: url("./assets/bg-mascot-light.svg");
+	background-image: none;
 	background-repeat: repeat;
 	background-size: 9px 19px;
+}
+
+@media (min-width: 1024px) {
+	.hero-header {
+		background-image: url("./assets/bg-mascot-light.svg");
+	}
 }
 
 .hero-bg-shape {
@@ -61,9 +67,6 @@ body {
 
 .location-shell {
 	background-color: #0a0a0a;
-	background-image: url("./assets/bg-mascot-light.svg");
-	background-repeat: repeat;
-	background-size: 9px 19px;
 }
 
 .location-wave {
@@ -83,9 +86,6 @@ body {
 	position: absolute;
 	inset: 0;
 	background-color: #0a0a0a;
-	background-image: url("./assets/bg-mascot-light.svg");
-	background-repeat: repeat;
-	background-size: 9px 19px;
 	-webkit-mask-image: var(--location-wave-mask);
 	mask-image: var(--location-wave-mask);
 	-webkit-mask-position: center;
@@ -117,7 +117,6 @@ body {
 
 .location-map-frame {
 	background-color: #fafafa;
-	border: 4px solid #fafafa;
 	border-radius: 1.75rem;
 	box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
 	overflow: hidden;
@@ -271,6 +270,17 @@ body {
 	white-space: nowrap;
 }
 
+/* Antialiased rendering for bold/black weight text (Figma parity) */
+.font-bold,
+.font-black,
+.font-display,
+.location-route-header-title,
+.location-route-description,
+.location-route-link-label {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 @theme {
 	--color-accent: #ff6b00;
 	--color-accent-dark: #e55a00;
@@ -340,7 +350,7 @@ body {
 		transform: translateY(0);
 	}
 	50% {
-		transform: translateY(-10px);
+		transform: translateY(-16px);
 	}
 }
 
