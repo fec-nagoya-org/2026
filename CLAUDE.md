@@ -48,7 +48,7 @@ bun run check        # Biome lint / format（自動修正）
 5. LINKS - 公式X、公式note
 6. LOCATION - 会場アクセス情報
 7. SPONSORS - スポンサー一覧（Platinum/Gold/Silver/Bronze）
-8. JOB BOARD - 求人情報
+8. JOB BOARD - 求人情報（スポンサープラン順: Platinum → Gold → Silver → Bronze）
 9. Footer - リンク、コピーライト
 
 ## Theme
