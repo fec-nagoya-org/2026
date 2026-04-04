@@ -36,6 +36,7 @@ bun run check        # Biome lint / format（自動修正）
   - `assets/staff-icon/` - スタッフアイコン画像。ファイル名は各スタッフのTwitter IDに対応。ただし `info.gyuh.ooo` のアイコンのみ外部URL直接参照
 - `server.js` - Bun製の開発用静的ファイルサーバー（port 3000、起動時にブラウザを自動オープン）
 - `src/location-map.js` - Google Maps APIを使った経路マップの描画スクリプト
+- `src/job-board-tracking.js` - JOBボード各リンクのクリックをGA `job_board_click` イベントとして送信するスクリプト
 - `biome.json` - Biome設定（インデント: タブ、クォート: ダブル、recommended rules、Tailwindディレクティブ対応）
 - `lefthook.yml` - pre-commit: Biome check、post-merge: bun.lock変更時に自動 `bun install`
 
@@ -77,6 +78,13 @@ bun run check        # Biome lint / format（自動修正）
   - CSS mask、複数gradient重ねなど、Tailwindのユーティリティでは表現できない複雑なスタイル
   - `prefers-reduced-motion` 等のグローバルなメディアクエリ
 - 要素セレクタ（`div`, `header` 等）への直接スタイル指定は避け、クラスセレクタを使用する
+
+## Analytics
+
+- Google Analytics 4（測定ID: `G-PF8CPFDBSN`）を `index.html` の `<head>` に設置済み
+- JOBボード各リンクのクリックは `job_board_click` イベント（パラメータ: `company`）として計測
+  - `company` の値: `kaonavi` / `leaner` / `prtimes` / `cocorodzashi` / `chot` / `reiwatravel`
+  - JOBボードに企業を追加する際は、`<a>` タグに `data-job-board-company="<company名>"` 属性を付与すること
 
 ## Deploy
 
