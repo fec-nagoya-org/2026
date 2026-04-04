@@ -36,7 +36,7 @@ bun run check        # Biome lint / format（自動修正）
   - `assets/staff-icon/` - スタッフアイコン画像。ファイル名は各スタッフのTwitter IDに対応。ただし `info.gyuh.ooo` のアイコンのみ外部URL直接参照
 - `server.js` - Bun製の開発用静的ファイルサーバー（port 3000、起動時にブラウザを自動オープン）
 - `src/location-map.js` - Google Maps APIを使った経路マップの描画スクリプト
-- `src/job-board-tracking.js` - JOBボード各リンクのクリックをGA `job_board_click` イベントとして送信するスクリプト
+- `src/tracking.js` - GAクリックイベントを送信するスクリプト（JOBボード・スポンサー・SNS）
 - `biome.json` - Biome設定（インデント: タブ、クォート: ダブル、recommended rules、Tailwindディレクティブ対応）
 - `lefthook.yml` - pre-commit: Biome check、post-merge: bun.lock変更時に自動 `bun install`
 
@@ -82,9 +82,14 @@ bun run check        # Biome lint / format（自動修正）
 ## Analytics
 
 - Google Analytics 4（測定ID: `G-PF8CPFDBSN`）を `index.html` の `<head>` に設置済み
-- JOBボード各リンクのクリックは `job_board_click` イベント（パラメータ: `company`）として計測
-  - `company` の値: `kaonavi` / `leaner` / `prtimes` / `cocorodzashi` / `chot` / `reiwatravel`
-  - JOBボードに企業を追加する際は、`<a>` タグに `data-job-board-company="<company名>"` 属性を付与すること
+- トラッキングスクリプトは `src/tracking.js` にまとめて管理
+- 各セクションのリンククリックを以下のイベントで計測:
+  - JOBボード: `job_board_click`（パラメータ: `company`）→ `<a data-job-board-company="<company名>">`
+    - `company` の値: `kaonavi` / `leaner` / `prtimes` / `cocorodzashi` / `chot` / `reiwatravel`
+  - スポンサー: `sponsor_click`（パラメータ: `company`）→ `<a data-sponsor-company="<company名>">`
+    - `company` の値: `kaonavi` / `stmn` / `leaner` / `prtimes` / `kokorozashi` / `chot` / `codecast` / `reiwatravel` / `local_tech` / `tskaigi`
+  - SNS: `sns_click`（パラメータ: `platform`）→ `<a data-sns-platform="<platform名>">`
+    - `platform` の値: `x` / `note`
 
 ## Deploy
 
