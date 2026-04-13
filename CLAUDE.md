@@ -85,7 +85,7 @@ bun run check        # Biome lint / format（自動修正）
 - トラッキングスクリプトは `src/tracking.js` にまとめて管理
 - 各セクションのリンククリックを以下のイベントで計測:
   - JOBボード: `job_board_click`（パラメータ: `company`）→ `<a data-job-board-company="<company名>">`
-    - `company` の値: `kaonavi` / `leaner` / `prtimes` / `cocorodzashi` / `chot` / `reiwatravel`
+    - `company` の値: `kaonavi` / `leaner` / `prtimes` / `cocorodzashi` / `chot` / `codecast` / `reiwatravel`
   - スポンサー: `sponsor_click`（パラメータ: `company`）→ `<a data-sponsor-company="<company名>">`
     - `company` の値: `kaonavi` / `stmn` / `leaner` / `prtimes` / `kokorozashi` / `chot` / `codecast` / `reiwatravel` / `local_tech` / `tskaigi`
   - SNS: `sns_click`（パラメータ: `platform`）→ `<a data-sns-platform="<platform名>">`
