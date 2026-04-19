@@ -3229,9 +3229,11 @@
 			class="flex fixed right-4 bottom-4 z-50 flex-col gap-2 items-end lg:hidden"
 		>
 			<span
-				class="relative inline-block px-3 py-2 text-[11px] font-black leading-none text-white whitespace-nowrap bg-[#0a0a0a] rounded-xl shadow-lg shadow-black/25"
+				class="relative inline-block px-3 py-2 text-[11px] font-black leading-tight text-center text-white bg-[#0a0a0a] rounded-xl shadow-lg shadow-black/25"
 			>
-				アイコンフレームはこちら！
+				アイコンフレームは
+				<br>
+				こちら！
 				<span
 					aria-hidden="true"
 					class="absolute right-[22px] -bottom-1 w-2.5 h-2.5 bg-[#0a0a0a] rotate-45"
@@ -3241,25 +3243,16 @@
 				href="https://fec-nagoya-org.github.io/icon-gen/"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-flex justify-center items-center w-14 h-14 text-white rounded-full shadow-lg transition-transform bg-[#ff6b00] shadow-black/30 hover:scale-105"
+				class="inline-flex overflow-hidden justify-center items-center w-14 h-14 rounded-full border-[3px] shadow-lg transition-transform bg-[#ff6b00] border-[#ff6b00] shadow-black/30 hover:scale-105"
 				aria-label="アイコンフレーム生成ページを開く（新しいタブで開きます）"
 			>
-				<svg
-					width="28"
-					height="28"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					xmlns="http://www.w3.org/2000/svg"
-					aria-hidden="true"
+				<img
+					src="./assets/icon-gen-frame.png"
+					alt=""
+					width="56"
+					height="56"
+					class="object-contain w-full h-full"
 				>
-					<rect x="3" y="3" width="18" height="18" rx="3" />
-					<circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" />
-					<path d="M21 15l-5-5L5 21" />
-				</svg>
 			</a>
 		</div>
 		<script>
