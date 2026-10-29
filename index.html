@@ -14,20 +14,20 @@
 			name="google-site-verification"
 			content="O9zgxHDs5bP3vmNIxfDTHgXRzdM1m3NK9hpngd8JUXg"
 		>
-		<!-- Google tag (gtag.js) -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=G-PF8CPFDBSN"
-		></script>
+		<!-- Google Tag Manager -->
 		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
-
-		gtag("config", "G-PF8CPFDBSN");
+		((w, d, s, l, i) => {
+			w[l] = w[l] || [];
+			w[l].push({ "gtm.start": Date.now(), event: "gtm.js" });
+			const f = d.getElementsByTagName(s)[0];
+			const j = d.createElement(s);
+			const dl = l !== "dataLayer" ? `&l=${l}` : "";
+			j.async = true;
+			j.src = `https://www.googletagmanager.com/gtm.js?id=${i}${dl}`;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, "script", "dataLayer", "GTM-KHH5F9LR");
 		</script>
+		<!-- End Google Tag Manager -->
 		<meta name="theme-color" content="#0a0a0a">
 		<meta property="og:title" content="Frontend Conference Nagoya 2026">
 		<meta
@@ -155,6 +155,16 @@
 		</script>
 	</head>
 	<body class="font-sans text-black bg-[#fafafa]">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript>
+			<iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-KHH5F9LR"
+				height="0"
+				width="0"
+				style="display:none;visibility:hidden"
+			></iframe>
+		</noscript>
+		<!-- End Google Tag Manager (noscript) -->
 		<div
 			class="relative mx-auto w-full max-w-[1280px] lg:px-4 xl:px-0 lg:flex lg:items-start lg:justify-center lg:gap-8"
 		>

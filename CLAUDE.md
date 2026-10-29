@@ -36,7 +36,7 @@ bun run check        # Biome lint / format（自動修正）
   - `assets/staff-icon/` - スタッフアイコン画像。ファイル名は各スタッフのTwitter IDに対応。ただし `info.gyuh.ooo` のアイコンのみ外部URL直接参照
 - `server.js` - Bun製の開発用静的ファイルサーバー（port 3000、起動時にブラウザを自動オープン）
 - `src/location-map.js` - Google Maps APIを使った経路マップの描画スクリプト
-- `src/tracking.js` - GAクリックイベントを送信するスクリプト（JOBボード・スポンサー・SNS）
+- `src/tracking.js` - GTMの`dataLayer`にクリックイベントをpushするスクリプト（JOBボード・スポンサー・SNS）。GA4への送信設定はGTM側で行う
 - `biome.json` - Biome設定（インデント: タブ、クォート: ダブル、recommended rules、Tailwindディレクティブ対応）
 - `lefthook.yml` - pre-commit: Biome check、post-merge: bun.lock変更時に自動 `bun install`
 
