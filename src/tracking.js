@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-	window.dataLayer = window.dataLayer || [];
-
 	document.querySelectorAll("[data-job-board-company]").forEach((link) => {
 		link.addEventListener("click", () => {
 			window.dataLayer.push({
