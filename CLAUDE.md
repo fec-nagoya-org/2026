@@ -36,7 +36,7 @@ bun run check        # Biome lint / format（自動修正）
   - `assets/staff-icon/` - スタッフアイコン画像。ファイル名は各スタッフのTwitter IDに対応。ただし `info.gyuh.ooo` のアイコンのみ外部URL直接参照
 - `server.js` - Bun製の開発用静的ファイルサーバー（port 3000、起動時にブラウザを自動オープン）
 - `src/location-map.js` - Google Maps APIを使った経路マップの描画スクリプト
-- `src/tracking.js` - GAクリックイベントを送信するスクリプト（JOBボード・スポンサー・SNS）
+- `src/tracking.js` - GTMの`dataLayer`にクリックイベントをpushするスクリプト（JOBボード・スポンサー・SNS）。GA4への送信設定はGTM側で行う
 - `biome.json` - Biome設定（インデント: タブ、クォート: ダブル、recommended rules、Tailwindディレクティブ対応）
 - `lefthook.yml` - pre-commit: Biome check、post-merge: bun.lock変更時に自動 `bun install`
 
@@ -81,8 +81,8 @@ bun run check        # Biome lint / format（自動修正）
 
 ## Analytics
 
-- Google Analytics 4（測定ID: `G-PF8CPFDBSN`）を `index.html` の `<head>` に設置済み
-- トラッキングスクリプトは `src/tracking.js` にまとめて管理
+- Google Tag Manager（コンテナID: `GTM-KHH5F9LR`）を `index.html` の `<head>` と `<body>` 直後に設置済み。GA4への送信設定はGTM側で行う
+- トラッキングスクリプトは `src/tracking.js` にまとめて管理し、イベントは `dataLayer` に push する
 - 各セクションのリンククリックを以下のイベントで計測:
   - JOBボード: `job_board_click`（パラメータ: `company`）→ `<a data-job-board-company="<company名>">`
     - `company` の値: `kaonavi` / `leaner` / `prtimes` / `cocorodzashi` / `chot` / `codecast` / `reiwatravel`
